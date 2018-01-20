@@ -2,9 +2,6 @@
 
 require_once("config.php");
 
-query("TRUNCATE semantic_tweets_nlp;");
-query("UPDATE semantic_tweets SET enriquecido = 'N'");
-
 $tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND enriquecido = 'N' LIMIT 50");
 //$tweets = query("SELECT * FROM semantic_tweets WHERE id = 911140791690522624");
 
