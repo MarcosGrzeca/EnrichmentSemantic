@@ -8,4 +8,5 @@ require_once("libs/ChromePhp.php");
 session_start();
 ob_start();
 ini_set('memory_limit', '2048M');
+date_default_timezone_set('America/Sao_Paulo');
 ?>
