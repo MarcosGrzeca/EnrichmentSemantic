@@ -2,7 +2,7 @@
 
 require_once("config.php");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND textOriginal IS NULL LIMIT 1000");
+$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND textOriginal IS NULL LIMIT 1");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -91,6 +91,7 @@ foreach (getRows($tweets) as $key => $value) {
         $diaSemana = date("D", strtotime($dataConvertida));
         $hora = date("H", strtotime($dataConvertida));
 
+        /*
         debug($textoOriginal);
         debug($texto);
         debug($hashTags);
@@ -98,7 +99,7 @@ foreach (getRows($tweets) as $key => $value) {
         debug($totalNegativo);
         debug($hora);
         debug($diaSemana);
-
+    */
 
         update("semantic_tweets", $value["id"], array("textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora));
 
@@ -156,9 +157,8 @@ function checkEmoji($str)
     return true;
 }
 
-function getEmoticons($str) 
-{
-    $emoticons = [];
+function getEmoticons($str) {
+    $emoticons = array();
     preg_match_all('/([0-9#][\x{20E3}])|[\x{00ae}\x{00a9}\x{203C}\x{2047}\x{2048}\x{2049}\x{3030}\x{303D}\x{2139}\x{2122}\x{3297}\x{3299}][\x{FE00}-\x{FEFF}]?|[\x{2190}-\x{21FF}][\x{FE00}-\x{FEFF}]?|[\x{2300}-\x{23FF}][\x{FE00}-\x{FEFF}]?|[\x{2460}-\x{24FF}][\x{FE00}-\x{FEFF}]?|[\x{25A0}-\x{25FF}][\x{FE00}-\x{FEFF}]?|[\x{2600}-\x{27BF}][\x{FE00}-\x{FEFF}]?|[\x{2900}-\x{297F}][\x{FE00}-\x{FEFF}]?|[\x{2B00}-\x{2BF0}][\x{FE00}-\x{FEFF}]?|[\x{1F000}-\x{1F6FF}][\x{FE00}-\x{FEFF}]?/u', $str, $extrat);
     return $extrat[0];
 }
