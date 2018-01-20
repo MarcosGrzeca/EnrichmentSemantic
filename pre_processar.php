@@ -109,11 +109,11 @@ foreach (getRows($tweets) as $key => $value) {
         #Hora
         #Remover alongamentos
     } catch (Exception $e) {
-        debug($e->getMessage());
+        var_dump($e->getMessage());
     }
 
     if ($ind > 10) {
-        break;
+        //break;
     }
     $ind++;
 }
