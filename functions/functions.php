@@ -277,3 +277,7 @@ function update($table, $id, $values) {
     $sql .= " WHERE id = '" . $id . "';";
     query($sql);
 }
+
+function fatalError($texto) {
+
+}
