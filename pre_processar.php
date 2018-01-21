@@ -2,7 +2,7 @@
 
 require_once("config.php");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND textOriginal IS NULL LIMIT 1000");
+$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 1000");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -101,7 +101,7 @@ foreach (getRows($tweets) as $key => $value) {
         debug($diaSemana);
     */
 
-        update("semantic_tweets", $value["id"], array("textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora));
+        update("semantic_tweets", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora));
 
         #Substituições
         #HashTags
