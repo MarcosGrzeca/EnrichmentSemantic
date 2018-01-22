@@ -281,3 +281,11 @@ function update($table, $id, $values) {
 function fatalError($texto) {
 
 }
+
+function estaAtivo($nome) {
+    $tweets = query("SELECT * FROM painel WHERE nome = '" . escape($nome) . "' AND ativo = 1");
+    if (getNumRows($tweets)) {
+        return true;
+    }
+    die("Painel inativo");    
+}

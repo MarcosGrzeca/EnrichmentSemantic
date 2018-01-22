@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+estaAtivo("importarTweet");
+
 $tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 0 LIMIT 1000");
 
 $ind = 0;

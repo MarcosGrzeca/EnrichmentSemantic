@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+estaAtivo("erros");
+
 query("UPDATE semantic_tweets SET erros = -1");
 $tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND language = 'en' AND erros = -1 LIMIT 100");
 //$tweets = query("SELECT * FROM semantic_tweets WHERE id = 911002453834850304;");

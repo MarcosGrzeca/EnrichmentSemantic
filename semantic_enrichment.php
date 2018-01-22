@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+estaAtivo("enriquecer");
+
 $tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 50");
 //$tweets = query("SELECT * FROM semantic_tweets WHERE id = 911140791690522624");
 
