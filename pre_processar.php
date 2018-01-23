@@ -103,7 +103,7 @@ foreach (getRows($tweets) as $key => $value) {
         debug($diaSemana);
     */
 
-        update("semantic_tweets", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora));
+        update("semantic_tweets", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora, "data" => $dataConvertida));
 
         #Substituições
         #HashTags
