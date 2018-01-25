@@ -1,5 +1,3 @@
 MardiGras near:"New Orleans, LA" within:15mi since:2017-02-01 until:2017-12-13
 
-python Exporter.py --querysearch "Mardigras" --near "New Orleans, LA" --since 2017-02-01 --until 2017-03-01
-
---lang en
+python Exporter.py --querysearch "Mardigras" --near "New Orleans, LA" --since 2017-02-01 --until 2017-03-01 --lang en

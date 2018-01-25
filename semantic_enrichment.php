@@ -23,18 +23,7 @@ foreach (getRows($tweets) as $key => $value) {
     		}
     	}
 
-		$fields = array("idTweet", "origem", "tipo", "palavra", "type");
-
-    	foreach ($calaisJSON as $keyC => $valueC) {
-    		if (isset($valueC->_typeGroup)) {
-				$typeGroup = $valueC->_typeGroup;
-				if (!empty($typeGroup) && !empty($valueC->{$typeGroup})) {
-					insert("semantic_tweets_nlp", $fields, array($value["id"], "C", $valueC->_typeGroup, $valueC->{$typeGroup}, NULL));
-				}
-    		}
-    	}
-
-    	try {
+		try {
     		$alchemy = alchemy($value["textParser"]);
     		$alchemyJSON = json_decode($alchemy);
     		$language = $alchemyJSON->language;
@@ -49,6 +38,17 @@ foreach (getRows($tweets) as $key => $value) {
     			var_dump("Alchemy");
     			var_dump($value["textParser"] . " -- " . $value["id"]);
     			var_dump($e->getMessage());
+    		}
+    	}
+
+    	$fields = array("idTweet", "origem", "tipo", "palavra", "type");
+
+    	foreach ($calaisJSON as $keyC => $valueC) {
+    		if (isset($valueC->_typeGroup)) {
+				$typeGroup = $valueC->_typeGroup;
+				if (!empty($typeGroup) && !empty($valueC->{$typeGroup})) {
+					insert("semantic_tweets_nlp", $fields, array($value["id"], "C", $valueC->_typeGroup, $valueC->{$typeGroup}, NULL));
+				}
     		}
     	}
 
@@ -122,7 +122,8 @@ function alchemy($texto, $idioma = "") {
 		CURLOPT_SSL_VERIFYPEER => 0,
 		CURLOPT_POSTFIELDS => json_encode($parametros),
 		CURLOPT_HTTPHEADER => array(
-			"authorization: Basic YTk4NTdjYTUtMWUyMC00M2M2LWJiODctZjMzZDM1YjYwYzQ0OkpTUnp2WWNUOFRZVg==",
+			//"authorization: Basic YTk4NTdjYTUtMWUyMC00M2M2LWJiODctZjMzZDM1YjYwYzQ0OkpTUnp2WWNUOFRZVg==",
+			"authorization: Basic ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==",
 			"cache-control: no-cache",
 			"content-type: application/json"
 		),
@@ -195,7 +196,7 @@ function calais($texto) {
 		echo "cURL Error #:" . $err;
 		throw new Exception($err, 1);
 	} else {
-      if (trim($response) == "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license.") {
+      if (trim($response) == "You exceeded the concurrent request limit for your license key. Please try again later or contact support to upgrade your license." || $httpcode == 401 || $httpcode == 403) {
       	     echo "Excedeu limite<br/>";
       		throw new Exception($response, 99);
       } else {
