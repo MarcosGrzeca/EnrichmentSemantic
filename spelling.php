@@ -71,6 +71,11 @@ function spell($text) {
       echo $response;
   }*/
 
+  $token = "eb539e21-22e8-13cb-9b04-8fbea23b2bdb";
+  if (rand(0, 1)) {
+  	$token = "9v2CvSfHZAmshXDNOhNV3qHyQeaap1Ggt0hjsneNotKCh7n7Ja";
+  }
+
   $curl = curl_init();
   curl_setopt_array($curl, array(
   	CURLOPT_URL => "https://montanaflynn-spellcheck.p.mashape.com/check/?text=" . urlencode($text),
@@ -84,12 +89,11 @@ function spell($text) {
   	CURLOPT_CUSTOMREQUEST => "GET",
   	CURLOPT_HTTPHEADER => array(
   		"Cache-Control: no-cache",
-  		"Postman-Token: eb539e21-22e8-13cb-9b04-8fbea23b2bdb",
+  		"Postman-Token: " . $token,
   		"X-Mashape-Key: lGazgCQaIgmshqsTCM14e16ZFWoXp1eRDWOjsnvwvYEM3SUdn1"
   	),
   ));
-    //9v2CvSfHZAmshXDNOhNV3qHyQeaap1Ggt0hjsneNotKCh7n7Ja
-
+    
   $response = curl_exec($curl);
   $err = curl_error($curl);
   $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
