@@ -71,7 +71,7 @@ function spell($text) {
       echo $response;
   }*/
 
-  $token = "eb539e21-22e8-13cb-9b04-8fbea23b2bdb";
+  $token = "lGazgCQaIgmshqsTCM14e16ZFWoXp1eRDWOjsnvwvYEM3SUdn1";
   if (rand(0, 1)) {
   	$token = "9v2CvSfHZAmshXDNOhNV3qHyQeaap1Ggt0hjsneNotKCh7n7Ja";
   }
@@ -89,8 +89,7 @@ function spell($text) {
   	CURLOPT_CUSTOMREQUEST => "GET",
   	CURLOPT_HTTPHEADER => array(
   		"Cache-Control: no-cache",
-  		"Postman-Token: " . $token,
-  		"X-Mashape-Key: lGazgCQaIgmshqsTCM14e16ZFWoXp1eRDWOjsnvwvYEM3SUdn1"
+  		"X-Mashape-Key: " . $token
   	),
   ));
     
