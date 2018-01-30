@@ -24,7 +24,7 @@ foreach (getRows($tweets) as $key => $value) {
     	}
 
 		try {
-    		$alchemy = alchemy($value["textParser"]);
+    		$alchemy = alchemy($value["textParser"], "en");
     		$alchemyJSON = json_decode($alchemy);
     		$language = $alchemyJSON->language;
     	} catch (Exception $e) {
@@ -151,6 +151,8 @@ function alchemy($texto, $idioma = "") {
 		} else {
 			if ($httpcode == 200) {
 				return $response;
+			} else if ($httpcode == 401) {
+				throw new Exception($response, 99);		
 			} else if ($httpcode == 400 && isset(json_decode($response)->language) && (json_decode($response)->language != "en")) {
 				throw new Exception($response->language, 27);
 			} else if ($httpcode == 400 && isset(json_decode($response)->error) && (json_decode($response)->error == "not enough text provided for language detection") && $idioma == "") {
