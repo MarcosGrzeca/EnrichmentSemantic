@@ -4,8 +4,8 @@ require_once("config.php");
 
 estaAtivo("erros");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND (language = 'en' OR language = '') AND erros = -1 LIMIT 300");
-//$tweets = query("SELECT * FROM semantic_tweets WHERE id = 911002453834850304;");
+//$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND (language = 'en' OR language = '') AND erros = -1 LIMIT 300");
+$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 300");
 
 
 $ind = 0;
