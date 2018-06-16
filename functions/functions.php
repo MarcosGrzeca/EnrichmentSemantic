@@ -26,9 +26,25 @@ function read_file($local_file) {
     $linhas = array();
     $file = fopen($local_file, "r");
     while(!feof($file)) {
-        $linhas[] = fread($file, round($download_rate * 1024));
+        $linhas[] = fread($file, 1024);
         flush();
         sleep(1);
+    }
+    fclose($file);
+    return $linhas;
+}
+
+function read_file_csv($local_file, $separator = ";") {
+    $linhas = array();
+    $file = fopen($local_file, "r");
+
+    $ind = 0;
+    while($data = fgetcsv($file, 5000, "$separator")) {
+        $linhas[] = $data;
+        $ind++;
+        if ($ind > 100) {
+            //break;
+        }
     }
     fclose($file);
     return $linhas;

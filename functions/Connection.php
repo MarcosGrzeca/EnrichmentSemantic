@@ -44,6 +44,8 @@ class Connection {
         # Retorna a conexão.
         return self::$conn;
     }
-}
 
-?>
+    public function  __destruct() {
+        mysql_close(self::$conn);
+    }
+}
