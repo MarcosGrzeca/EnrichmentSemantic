@@ -31,8 +31,13 @@ function montarArvore($arv, $count = 0, $arvoreCategoriasTmp) {
 
 $contDesconsideradas = 0;
 
+
+
+
+
 function montarHtml($nodo, $nivel = 0) {
     global $contDesconsideradas;
+    $marcos = array();
     foreach ($nodo->getFilhos() as $key => $value) {
         if ($nivel == 0 && $value->getCount() < 10) {
             $contDesconsideradas++;
@@ -42,25 +47,22 @@ function montarHtml($nodo, $nivel = 0) {
         for ($i=0; $i < $nivel; $i++) { 
             $identacao .= "&nbsp;&nbsp;";
         }
-        debug($identacao);
+        //debug($identacao);
         echo "<tr><td>" . $identacao . $value->getNome() . "</td><td>" . $value->getCount() . "</td></tr>";
-        montarHtml($value, ($nivel + 1));
+        
+        $marcos[] = array("nodes" => montarHtml($value, ($nivel + 1)), "text" => $value->getNome(), "tags" => array($value->getCount()));
     }
+    return $marcos;
 }
+
+$marcos = array();
 
 echo "<table>";
 echo "<thead><tr><th>Categoria</th><th>Count</th></tr></thead><tbody>";
-montarHtml($arvoreCategorias);
-
+$final = montarHtml($arvoreCategorias);
+debug(json_encode($final));
 echo "</tbody></table>";
 
 echo "<br/>Desconsiderei " . $contDesconsideradas;
-
-//print_r($arvoreCategorias);
-//debug("FINALLL");
-//debug(json_encode($arvoreCategorias));
-//debug((array) $arvoreCategorias);
-
-//debug($arvoreCategorias->get());
 echo "</pre>";
 ?>
