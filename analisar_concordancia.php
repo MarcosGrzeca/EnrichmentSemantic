@@ -7,7 +7,7 @@ $paises = array();
 
 $avaliacoes = [];
 
-if (($handle = fopen("planilhas/resultados/parte4/f1279922.csv", "r")) !== FALSE) {
+if (($handle = fopen("planilhas/resultados/parte5/f1279922.csv", "r")) !== FALSE) {
 	$cont = 1;
 
 	$header = fgetcsv($handle, 2000, ",");
@@ -16,6 +16,13 @@ if (($handle = fopen("planilhas/resultados/parte4/f1279922.csv", "r")) !== FALSE
 	$contador = 0;
     while (($data = fgetcsv($handle, 2000, ",")) !== FALSE) {
     	//debug($data);
+
+    	$date = $data[1];
+
+    	if (strtotime($date) < strtotime("07/02/2018 12:00:00")) {
+    		continue;
+    	}
+		
     	$q1 = $data[14];
     	$q2 = $data[15];
     	$q3 = $data[16];
@@ -23,8 +30,9 @@ if (($handle = fopen("planilhas/resultados/parte4/f1279922.csv", "r")) !== FALSE
 
     	//debug(array($q1, $q2, $q3, $link));
 
-    	if ($data[10] != "VEN") {
-    		continue;
+    	//"CAN", "USA", "IND", "PHL"
+    	if (!in_array($data[10], array("CAN", "USA", "IND"))) {
+    		//continue;
     	}
 
     	if (!isset($paises[$data[10]])) {
@@ -45,6 +53,7 @@ if (($handle = fopen("planilhas/resultados/parte4/f1279922.csv", "r")) !== FALSE
     		//break;
     	}
     }
+    debug($contador);
 }
 
 echo "<pre>";
