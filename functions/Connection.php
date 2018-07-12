@@ -14,7 +14,7 @@ class Connection {
 	}
 
 	private static function connect() {
-		self::$conn = new mysqli("icwsm.ckfgeb2fkvqp.sa-east-1.rds.amazonaws.com", "root", "senharoot123", "icwsm");
+		self::$conn = new mysqli("marcosrds.ce948apvv9n9.sa-east-1.rds.amazonaws.com", "root", "senharoot123", "icwsm");
 //		
 
 	    /* check connection */
