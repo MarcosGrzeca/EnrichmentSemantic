@@ -1,0 +1,28 @@
+- introdução e o que vai fazer
+  resumo do que quer atingir e contribuição
+
+- tenho objetivos específicos
+- future works
+ terminar a dissertação fazendo isso
+- reduzir experimentos
+  Tarefas class
+
+
+ A importância de tweets
+
+OK - Young people who user --- the importance of data extracted
+
+
+Na introdução destacar a importância:
+OK - Automatic identification of drunk texting allows detaild studios on alchool consumption based on a large volume of data.
+OK - Abordar outros problemas de drogas
+
+
+Word embeddings: - experimento inicial, que me motivou a continuar trabalhando
+
+Para concluir esse trabalho, com o segundo experimento: preciso aumentar o dataset
+testando 4 redes e verificando o papel dos embeddings
+
+Vencemos a primeira, e estamos estudando as 2
+
+OK - Fazer para Q2

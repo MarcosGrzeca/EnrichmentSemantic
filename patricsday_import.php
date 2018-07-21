@@ -39,7 +39,7 @@ print_r(count($resultadoFinal));
 print_r("<br/><br/>");
 print_r("Não foi " . $contadorNaoEsta);
 
-$fp = fopen('planilhas/amazonpartecompleto.csv', 'w');
+$fp = fopen('planilhas/amazonpartecompleto2.csv', 'w');
 
 //tweet_url
 
@@ -58,7 +58,7 @@ fclose($fp);
 function possuiExpressao($text) {
     $expressoes = getPatterns();
     foreach ($expressoes as $pattern) {
-        if (preg_match($pattern, $text . " bhammed", $matches)) {
+        if (preg_match($pattern, $text, $matches)) {
             return true;
         }
     }

@@ -92,17 +92,6 @@ foreach (getRows($tweets) as $key => $value) {
         $dataConvertida = date("Y-m-d H:i:s", strtotime("-4 hours", strtotime($tweet->created_at)));
         $diaSemana = date("D", strtotime($dataConvertida));
         $hora = date("H", strtotime($dataConvertida));
-
-        /*
-        debug($textoOriginal);
-        debug($texto);
-        debug($hashTags);
-        debug($totalPositivo);
-        debug($totalNegativo);
-        debug($hora);
-        debug($diaSemana);
-    */
-
         update("semantic_tweets", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora, "data" => $dataConvertida));
 
         #Substituições
