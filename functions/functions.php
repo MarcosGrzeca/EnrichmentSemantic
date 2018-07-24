@@ -56,6 +56,7 @@ function query($sql, $die = true) {
         if ($mys) {
             return $mys;
         } else {
+            debug($sql);
             throw new Exception(Connection::get()->error, mysqli_errno(Connection::get()));
         }
     } catch (Exception $e) {

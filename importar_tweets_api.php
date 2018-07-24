@@ -2,9 +2,11 @@
 
 require_once("config.php");
 
+set_time_limit(290);
+
 estaAtivo("importarTweet");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 0 LIMIT 1000");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 0 LIMIT 1000");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {

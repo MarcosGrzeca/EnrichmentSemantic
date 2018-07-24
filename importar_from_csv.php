@@ -17,7 +17,7 @@ foreach ($files as $key => $value) {
             if ($cont != 0) {
                 if ($data[8] > 0) {
                     try {
-                        insert("semantic_tweets_alcolic", array("id", "tweet", "link"), array("AAA" . $data[8], $data[4], $data[9]), false);                        
+                        insert("semantic_tweets_alcolic", array("id", "tweet", "link"), array($data[8], $data[4], $data[9]), false);                        
                     } catch (Exception $e) {
                         if ($e->getCode() == 1062) {
                             continue;
