@@ -27,7 +27,7 @@ foreach (getRows($tweets) as $key => $value) {
         } else {
             $situacao = 1;
         }
-        update("semantic_tweets", $value["id"], array("situacao" => $situacao, "content" => $res));
+        update("semantic_tweets_alcolic", $value["id"], array("situacao" => $situacao, "content" => $res));
     } catch (Exception $e) {
         debug("ERRO");
         debug($e->getMessage());        
