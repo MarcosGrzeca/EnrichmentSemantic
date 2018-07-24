@@ -6,7 +6,8 @@ echo "<pre>";
 $files = glob("planilhas/alcolicevents/*.csv");
 foreach ($files as $key => $value) {
     $value = trim($value);
-    if (!in_array($value, ["planilhas/alcolicevents/parte41.csv", "planilhas/alcolicevents/parte42.csv", "planilhas/alcolicevents/parte43.csv"])) {
+    //if (!in_array($value, ["planilhas/alcolicevents/parte41.csv", "planilhas/alcolicevents/parte42.csv", "planilhas/alcolicevents/parte43.csv"])) {
+    if (!in_array($value, ["planilhas/alcolicevents/parte39.csv", "planilhas/alcolicevents/parte40.csv"])) {
         continue;
     }
     echo $value . PHP_EOL;
@@ -17,7 +18,7 @@ foreach ($files as $key => $value) {
             if ($cont != 0) {
                 if ($data[8] > 0) {
                     try {
-                        insert("semantic_tweets_alcolic", array("id", "tweet", "link", "drunk"), array($data[8], $data[4], $data[9], "N"), false);                        
+                        insert("semantic_tweets_alcolic", array("id", "tweet", "link", "drunk"), array($data[8], $data[4], $data[9], "S"), false);                        
                     } catch (Exception $e) {
                         if ($e->getCode() == 1062) {
                             continue;
@@ -27,7 +28,7 @@ foreach ($files as $key => $value) {
                     $aTmp = explode("/", $data[count($data) - 1]);
                     if ($aTmp[count($aTmp) - 1] > 0) {
                         try {
-                            insert("semantic_tweets_alcolic", array("id", "tweet", "link", "drunk"), array($aTmp[count($aTmp) - 1], $data[4], $data[count($data) - 1], "N"), false);
+                            insert("semantic_tweets_alcolic", array("id", "tweet", "link", "drunk"), array($aTmp[count($aTmp) - 1], $data[4], $data[count($data) - 1], "S"), false);
                         } catch (Exception $e) {
                             if ($e->getCode() == 1062) {
                                 continue;
