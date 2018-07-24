@@ -4,7 +4,7 @@ require_once("config.php");
 
 estaAtivo("preprocessar");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 1000");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 1000");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {

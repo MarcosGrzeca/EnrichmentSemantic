@@ -1,0 +1,11 @@
+Instruções:
+  ☐ pre_validacao_q2.php
+  Responsável por setar pre_validacao_q2 ou pre_validacao_q2_v2 conforme planilha gerada por treinamento
+  ☐ nao_classificados_filtro.csv
+  Filtrado apenas por validacao_q2
+  ☐ nao_classificados_filtro_v2.csv
+  Filtrado apenas por validacao_q2_v2
+  ☐ verificarExistenciaExpressaoRegular.php
+  Verifica se tem alguma das expressões do dataset
+  https://materiais.targettrust.com.br/promo-aniversario-targettrust-2018
+  

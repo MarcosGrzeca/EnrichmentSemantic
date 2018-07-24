@@ -56,7 +56,7 @@ function query($sql, $die = true) {
         if ($mys) {
             return $mys;
         } else {
-            throw new Exception(Connection::get()->error, 1);
+            throw new Exception(Connection::get()->error, mysqli_errno(Connection::get()));
         }
     } catch (Exception $e) {
         if ($die) {
@@ -269,13 +269,13 @@ function converterEnconding($xmlE){
    return $xmlE;
 }
 
-function insert($table, $headers, $values) {
+function insert($table, $headers, $values, $die = true) {
     $valores = array();
     foreach ($values as $key => $value) {
         $valores[] = "'" . escape($value) . "'";
     }
     $sql = "INSERT INTO `" . $table . "` (" . implode(",", $headers) . ") VALUES (" . implode(",", $valores) . ")";
-    query($sql);
+    query($sql, $die);
 }
 
 function update($table, $id, $values) {
