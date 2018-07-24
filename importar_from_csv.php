@@ -43,7 +43,6 @@ foreach ($files as $key => $value) {
             $cont++;
         }
     }
-    break;
 }
 
 die;
