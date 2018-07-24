@@ -4,13 +4,11 @@ require_once("config.php");
 
 estaAtivo("preprocessar");
 
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 1000");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 4000");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
-    //debug($value["content"]);
-
-    #Substituições
+       #Substituições
     #HashTags
     #Emotions
     #Hora
@@ -18,11 +16,11 @@ foreach (getRows($tweets) as $key => $value) {
 
     try {
         $tweet = json_decode($value["content"]);
+
         $textoOriginal = $tweet->text;
         $texto = $tweet->text;
+        $idUsuario = $tweet->user->id_str;
         
-
-
         $hashTags = array();
         if (isset($tweet->entities->hashtags)) {
             foreach ($tweet->entities->hashtags as $key => $hashTag) {
@@ -92,7 +90,7 @@ foreach (getRows($tweets) as $key => $value) {
         $dataConvertida = date("Y-m-d H:i:s", strtotime("-4 hours", strtotime($tweet->created_at)));
         $diaSemana = date("D", strtotime($dataConvertida));
         $hora = date("H", strtotime($dataConvertida));
-        update("semantic_tweets_alcolic", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora, "data" => $dataConvertida));
+        update("semantic_tweets_alcolic", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora, "data" => $dataConvertida, "idUser" => $idUsuario));
 
         #Substituições
         #HashTags

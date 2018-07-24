@@ -56,14 +56,13 @@ function query($sql, $die = true) {
         if ($mys) {
             return $mys;
         } else {
-            debug($sql);
+            //debug($sql);
             throw new Exception(Connection::get()->error, mysqli_errno(Connection::get()));
         }
     } catch (Exception $e) {
         if ($die) {
             debug("CATCH");
             debug($sql);
-
             var_export($sql);
             die($e->getMessage());
         } else {
