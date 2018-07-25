@@ -1,7 +1,7 @@
 <?php
 require_once("../config.php");
 
-$tweets = query("SELECT DISTINCT(idUser) as idUser FROM semantic_tweets_alcolic st WHERE idUser IS NOT NULL AND NOT EXISTS (SELECT stt.id FROM semantic_tweets_alcolic stt WHERE st.idUser = stt.idUser AND stt.drunk = 'A') LIMIT 30");
+$tweets = query("SELECT DISTINCT(idUser) as idUser FROM semantic_tweets_alcolic st WHERE idUser IS NOT NULL AND NOT EXISTS (SELECT stt.id FROM semantic_tweets_alcolic stt WHERE st.idUser = stt.idUser AND stt.drunk = 'A') LIMIT 20");
 
 foreach (getRows($tweets) as $key => $value) {
 	try {
