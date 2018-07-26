@@ -4,7 +4,7 @@ require_once("config.php");
 
 estaAtivo("erros");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 300");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 300");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -27,7 +27,7 @@ foreach (getRows($tweets) as $key => $value) {
 		} else {
 			//debug("TEXTO CORRETO");
 		}
-		update("semantic_tweets", $value["id"], array("erros" => $totalErros, "jsonErros" => $spell));
+		update("semantic_tweets_alcolic", $value["id"], array("erros" => $totalErros, "jsonErros" => $spell));
 	} catch (Exception $e) {
 		debug($e->getMessage());
 	}
