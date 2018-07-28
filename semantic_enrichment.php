@@ -4,7 +4,7 @@ require_once("config.php");
 
 estaAtivo("enriquecer");
 
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 50");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 180");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -176,8 +176,8 @@ function alchemy($texto, $idioma = "") {
 function calais($texto) {
 	$curl = curl_init();
 
-	$tokens = array("bpftqGYLoMICrD2GvuuaSyKgvsSTsjgb", "5k2EFOFxFOIAUl5e9AJXDuJVM7x03nxd");
-	$token = $tokens[rand(0,1)];
+	$tokens = array("bpftqGYLoMICrD2GvuuaSyKgvsSTsjgb", "5k2EFOFxFOIAUl5e9AJXDuJVM7x03nxd", "lsE903VAyy6QXLPozCUFaPIJKteHsIog");
+	$token = $tokens[rand(0,count($tokens)-1)];
 
 	curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://api.thomsonreuters.com/permid/calais",
