@@ -6,7 +6,15 @@ set_time_limit(300);
 
 estaAtivo("enriquecer");
 
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 180");
+$sqlIni = "SELECT id, textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' ";
+
+if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
+	$sqlIni .= "ORDER by id desc ";
+} else {
+	$sqlIni .= "ORDER by id ";
+}
+
+$tweets = query($sqlIni);
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
