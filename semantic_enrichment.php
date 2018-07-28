@@ -4,8 +4,7 @@ require_once("config.php");
 
 estaAtivo("enriquecer");
 
-$tweets = query("SELECT * FROM semantic_tweets WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 50");
-//$tweets = query("SELECT * FROM semantic_tweets WHERE id = 911140791690522624");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 50");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -88,11 +87,10 @@ foreach (getRows($tweets) as $key => $value) {
     			}
     		}
     	}
-		update("semantic_tweets", $value["id"], array("enriquecido" => "S", "language" => $language, "calaisResponse" => $calais, "alchemyResponse" => $alchemy));
+		update("semantic_tweets_alcolic", $value["id"], array("enriquecido" => "S", "language" => $language, "calaisResponse" => $calais, "alchemyResponse" => $alchemy));
     } catch (Exception $e) {
     	var_dump($e->getMessage()); 
     }
-
     if ($ind >= 1) {
     	//break;
     }
@@ -100,6 +98,15 @@ foreach (getRows($tweets) as $key => $value) {
 }
 
 function alchemy($texto, $idioma = "") {
+	/*{
+	  "url": "https://gateway.watsonplatform.net/natural-language-understanding/api",
+	  "username": "a6564515-0ab7-4748-881e-280a6506c1e1",
+	  "password": "AgSElOZigYhL"
+	}*/
+
+	$tokens = array("ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==", "ZTBjYTdhMzctMmE1OC00ZDI2LTlmNzUtMGUwN2EwYTFhMmRmOk9aVFJ0YUM2MklqOA==", "ZjVjYTgwMjgtMDk3ZC00MmEzLThiM2ItODc4MjJjZWM3Njk5OlJyYTdGMmREVFNIeg==", "YTY1NjQ1MTUtMGFiNy00NzQ4LTg4MWUtMjgwYTY1MDZjMWUxOkFnU0VsT1ppZ1loTA==");
+	$token = $tokens[rand(0,count($tokens) - 1)];
+
 	$parametros = array("text" => $texto, "features" => array());
 	if ($idioma != "") {
 		$parametros["language"] = $idioma;
@@ -169,6 +176,9 @@ function alchemy($texto, $idioma = "") {
 function calais($texto) {
 	$curl = curl_init();
 
+	$tokens = array("bpftqGYLoMICrD2GvuuaSyKgvsSTsjgb", "5k2EFOFxFOIAUl5e9AJXDuJVM7x03nxd");
+	$token = $tokens[rand(0,1)];
+
 	curl_setopt_array($curl, array(
 		CURLOPT_URL => "https://api.thomsonreuters.com/permid/calais",
 		CURLOPT_RETURNTRANSFER => true,
@@ -184,7 +194,7 @@ function calais($texto) {
 			"cache-control: no-cache",
 			"content-type: text/raw",
 			"outputformat: application/json",
-			"x-ag-access-token: 5k2EFOFxFOIAUl5e9AJXDuJVM7x03nxd"
+			"x-ag-access-token: " . $token
 		),
 	));
 
