@@ -4,6 +4,8 @@ require_once("config.php");
 
 estaAtivo("entidades");
 
+set_time_limit(300);
+
 $tweets = query("SELECT DISTINCT(palavra) as palavra FROM semantic_tweets_nlp WHERE NOT EXISTS (SELECT * FROM semantic_conceito WHERE semantic_conceito.palavra = semantic_tweets_nlp.palavra) AND tipo = 'E' LIMIT 300");
 
 $ind = 0;
