@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+set_time_limit(300);
+
 estaAtivo("enriquecer");
 
 $tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' LIMIT 180");
