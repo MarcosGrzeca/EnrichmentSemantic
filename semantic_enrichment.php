@@ -4,7 +4,7 @@ require_once("config.php");
 
 set_time_limit(300);
 
-estaAtivo("enriquecer");
+//estaAtivo("enriquecer");
 
 $sqlIni = "SELECT id, textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' ";
 
@@ -28,7 +28,7 @@ foreach (getRows($tweets) as $key => $value) {
     		$calaisJSON = json_decode($calais);
     	} catch (Exception $e) {
     		if ($e->getCode() == 99) {
-    			var_dump("EXCEDEU LIMITE");
+    			var_dump("EXCEDEU LIMITE Calais");
     			die;
     		}
     	}
@@ -42,7 +42,7 @@ foreach (getRows($tweets) as $key => $value) {
     			debug("Idioma invalido");
     			$language = $e->getMessage();
     		} else if ($e->getCode() == 99) {
-    			var_dump("EXCEDEU LIMITE");
+    			var_dump("EXCEDEU LIMITE Alchemy");
     			die;
     		} else {
     			var_dump("Alchemy");
@@ -115,7 +115,7 @@ function alchemy($texto, $idioma = "") {
 	  "password": "AgSElOZigYhL"
 	}*/
 
-	$tokens = array("ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==", "ZTBjYTdhMzctMmE1OC00ZDI2LTlmNzUtMGUwN2EwYTFhMmRmOk9aVFJ0YUM2MklqOA==", "ZjVjYTgwMjgtMDk3ZC00MmEzLThiM2ItODc4MjJjZWM3Njk5OlJyYTdGMmREVFNIeg==", "YTY1NjQ1MTUtMGFiNy00NzQ4LTg4MWUtMjgwYTY1MDZjMWUxOkFnU0VsT1ppZ1loTA==");
+	$tokens = array("ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==", "ZTBjYTdhMzctMmE1OC00ZDI2LTlmNzUtMGUwN2EwYTFhMmRmOk9aVFJ0YUM2MklqOA==", "ZjVjYTgwMjgtMDk3ZC00MmEzLThiM2ItODc4MjJjZWM3Njk5OlJyYTdGMmREVFNIeg==", "YTY1NjQ1MTUtMGFiNy00NzQ4LTg4MWUtMjgwYTY1MDZjMWUxOkFnU0VsT1ppZ1loTA==", "YTg5ZDNmNmMtNmZhZi00NTBiLTg0ZWQtMjViNjk3ZmJlNDZjOnZRUUJSMnd5RFN0Rg==");
 	$token = $tokens[rand(0,count($tokens) - 1)];
 
 	$parametros = array("text" => $texto, "features" => array());
@@ -141,7 +141,7 @@ function alchemy($texto, $idioma = "") {
 		CURLOPT_POSTFIELDS => json_encode($parametros),
 		CURLOPT_HTTPHEADER => array(
 			//"authorization: Basic YTk4NTdjYTUtMWUyMC00M2M2LWJiODctZjMzZDM1YjYwYzQ0OkpTUnp2WWNUOFRZVg==",
-			"authorization: Basic ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==",
+			"authorization: Basic " . $token,
 			"cache-control: no-cache",
 			"content-type: application/json"
 		),
