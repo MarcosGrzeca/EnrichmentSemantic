@@ -14,11 +14,12 @@ if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id ";
 }
 
+$sqlIni .= "LIMIT 100";
+
 $tweets = query($sqlIni);
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
-    
     $language = "";
 
     try {
