@@ -9,9 +9,9 @@ estaAtivo("enriquecer");
 $sqlIni = "SELECT id, textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' ";
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
-	$sqlIni .= "ORDER by id desc ";
+	$sqlIni .= "ORDER by possuiURL, id desc ";
 } else {
-	$sqlIni .= "ORDER by id ";
+	$sqlIni .= "ORDER by possuiURL, id ";
 }
 
 $sqlIni .= "LIMIT 100";
