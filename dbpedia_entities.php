@@ -6,7 +6,15 @@ estaAtivo("entidades");
 
 set_time_limit(200);
 
-$tweets = query("SELECT DISTINCT(palavra) as palavra FROM semantic_tweets_nlp WHERE NOT EXISTS (SELECT * FROM semantic_conceito WHERE semantic_conceito.palavra = semantic_tweets_nlp.palavra) AND tipo = 'E' LIMIT 50");
+$tweets = query("SELECT DISTINCT(palavra) as palavra FROM semantic_tweets_nlp WHERE NOT EXISTS (SELECT * FROM semantic_conceito WHERE semantic_conceito.palavra = semantic_tweets_nlp.palavra) AND tipo = 'E' ");
+
+if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
+	$sqlIni .= "ORDER by id desc ";
+} else {
+	$sqlIni .= "ORDER by id ";
+}
+
+$sqlIni .= "LIMIT 100";
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
