@@ -175,7 +175,11 @@ if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id ";
 }
 
-$sqlIni .= "LIMIT 50 ";
+if (isset($_REQUEST["random"]) && $_REQUEST["random"] == "YES") {
+	$sqlIni .= "LIMIT " . rand(60, 10000) . ", 50 ";
+} else {
+	$sqlIni .= "LIMIT 50 ";
+}
 
 echo "<pre>";
 
