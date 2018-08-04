@@ -171,7 +171,7 @@ function podeExecutar($ini) {
 
 $salvarBD = true;
 
-$sqlIni = query("SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ");
+$sqlIni = "SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ";
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id desc ";
@@ -185,12 +185,14 @@ if (isset($_REQUEST["random"]) && $_REQUEST["random"] == "YES") {
 	$sqlIni .= "LIMIT 50 ";
 }
 
+$tweets = query($sqlIni);
+
 echo "<pre>";
 
 echo "hora Inicio " . date("H:i:s") . "<br/>";
 
 $ini = strtotime("now");
-foreach (getRows($sqlIni) as $key => $conceito) {
+foreach (getRows($tweets) as $key => $conceito) {
 	if (!podeExecutar($ini)) {
 		continue;
 	}
