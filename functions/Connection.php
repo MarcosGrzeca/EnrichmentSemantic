@@ -46,6 +46,6 @@ class Connection {
     }
 
     public function  __destruct() {
-        mysql_close(self::$conn);
+        mysqli_close(self::$conn);
     }
 }
