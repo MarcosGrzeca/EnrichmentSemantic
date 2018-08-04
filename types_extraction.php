@@ -165,6 +165,10 @@ function getCountSC($resource) {
 	}
 }
 
+function podeExecutar($ini) {
+	return ((strtotime("now") - $ini) < 290);
+}
+
 $salvarBD = true;
 
 $tweets = query("SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ");
@@ -185,7 +189,11 @@ echo "<pre>";
 
 echo "hora Inicio " . date("H:i:s") . "<br/>";
 
+$ini = strtotime("now");
 foreach (getRows($tweets) as $key => $conceito) {
+	if (!podeExecutar($ini)) {
+		continue;
+	}
 	//$types = array();	
 	try {
 
