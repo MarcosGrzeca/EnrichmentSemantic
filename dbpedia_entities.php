@@ -6,7 +6,7 @@ estaAtivo("entidades");
 
 set_time_limit(200);
 
-$tweets = query("SELECT DISTINCT(palavra) as palavra FROM semantic_tweets_nlp WHERE NOT EXISTS (SELECT * FROM semantic_conceito WHERE semantic_conceito.palavra = semantic_tweets_nlp.palavra) AND tipo = 'E' ");
+$tweets = query("SELECT DISTINCT(palavra) as palavra FROM semantic_tweets_nlp WHERE NOT EXISTS (SELECT id FROM semantic_conceito WHERE semantic_conceito.palavra = semantic_tweets_nlp.palavra) AND tipo = 'E' ");
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id desc ";

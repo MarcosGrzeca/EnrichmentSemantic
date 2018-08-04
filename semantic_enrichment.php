@@ -56,7 +56,9 @@ foreach (getRows($tweets) as $key => $value) {
     	foreach ($calaisJSON as $keyC => $valueC) {
     		if (isset($valueC->_typeGroup)) {
 				$typeGroup = $valueC->_typeGroup;
-				if (!empty($typeGroup) && !empty($valueC->{$typeGroup})) {
+				if ($valueC->_typeGroup == "entities") {
+					insert("semantic_tweets_nlp", $fields, array($value["id"], "C", "E", $valueC->name, $valueC->_type));
+				} else if (!empty($typeGroup) && !empty($valueC->{$typeGroup})) {
 					insert("semantic_tweets_nlp", $fields, array($value["id"], "C", $valueC->_typeGroup, $valueC->{$typeGroup}, NULL));
 				}
     		}

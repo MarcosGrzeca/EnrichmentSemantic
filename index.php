@@ -18,6 +18,7 @@
 	Pré-processar tweets <a href="pre_processar.php">pre_processar.php</a><br/>
 	Enriquecimento Semântico <a href="semantic_enrichment.php">semantic_enrichment.php</a><br/>
 	DBPedia <a href="dbpedia_entities.php">dbpedia_entities.php</a><br/>
+	DBPedia Types <a href="types_extraction.php">types_extraction.php</a><br/>
 	Spelling <a href="spelling.php">spelling.php</a><br/>
 	Painel <a href="painel.php">painel.php</a><br/>
 </body>
