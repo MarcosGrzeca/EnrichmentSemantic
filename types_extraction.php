@@ -167,15 +167,21 @@ function getCountSC($resource) {
 
 $salvarBD = true;
 
-$tweets = query("SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL LIMIT 50");
+$tweets = query("SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ");
 
+if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
+	$sqlIni .= "ORDER by id desc ";
+} else {
+	$sqlIni .= "ORDER by id ";
+}
+
+$sqlIni .= "LIMIT 50 ";
 
 echo "<pre>";
 
 echo "hora Inicio " . date("H:i:s") . "<br/>";
 
 foreach (getRows($tweets) as $key => $conceito) {
-	debug($conceito);
 	//$types = array();	
 	try {
 
