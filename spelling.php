@@ -4,7 +4,7 @@ require_once("config.php");
 
 estaAtivo("erros");
 
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 300");
+$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 200");
 
 $ind = 0;
  foreach (getRows($tweets) as $key => $value) {
