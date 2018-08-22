@@ -173,6 +173,16 @@ $salvarBD = true;
 
 $sqlIni = "SELECT * FROM semantic_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ";
 
+/*$sqlIni = "SELECT sc.*
+			FROM semantic_conceito sc
+			WHERE sc.sucesso = 1
+			AND sc.resourceTypes IS NULL
+			AND sc.palavra IN (
+				SELECT st.palavra
+				FROM semantic_tweets_nlp st
+				WHERE st.palavra = sc.palavra
+			)";*/
+
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id desc ";
 } else {
@@ -256,17 +266,6 @@ foreach (getRows($tweets) as $key => $conceito) {
 	}
 }
 echo "Hora fim " . date("H:i:s") . "<br/>";
-
 var_export(json_encode($types));
-
-//var_export($types);
 echo "</pre>";
-
-/*try {
-	$myfile = fopen("types.txt", "w");
-	fwrite($myfile, json_encode($types));
-	fclose($myfile);
-} catch (Exception $e) {
-	debug("Nao foi possivel criar o arquivo");
-}*/
 ?>

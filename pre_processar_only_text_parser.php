@@ -5,7 +5,7 @@ require_once("config.php");
 estaAtivo("preprocessar");
 
 //$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND textOriginal IS NULL AND preProcessado = 'N' LIMIT 500");
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'N' LIMIT 1000");
+$tweets = query("SELECT textParser, content, id FROM semantic_tweets_alcolic WHERE situacao = 1");
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
@@ -62,42 +62,14 @@ foreach (getRows($tweets) as $key => $value) {
             }
         }
 
-        // CHECK POLARIETY EMOTICONS
-        $totalPositivo = 0;
-        $totalNegativo = 0;
-        if (checkEmoji2($textoOriginal)) {
-            $emoticons = getEmoticons($textoOriginal);
-            foreach ($emoticons as $key => $emonn) {
-                $retorno = getPolaridadeEmoticon($emonn);
-                if ($retorno["polarity"] > 0) {
-                    $totalPositivo += $retorno["polarity"];
-                    $qtdPos++;
-                } else {
-                    $totalNegativo += $retorno["polarity"];
-                    if ($retorno["name"] != null) {
-                        $qtdNeg++;
-                    }
-                }
-                $possuiEmoticon = 1;
-            }
-        }
-
         //remover alongamentos       
         while (preg_match('/(.)\\1{2}/', $texto)) {
             $texto = preg_replace('/(.)\\1{2}/', '$1$1', $texto);
         }
 
-        $data = date("Y-m-d H:i:s", strtotime($tweet->created_at));
-        $dataConvertida = date("Y-m-d H:i:s", strtotime("-4 hours", strtotime($tweet->created_at)));
-        $diaSemana = date("D", strtotime($dataConvertida));
-        $hora = date("H", strtotime($dataConvertida));
-        update("semantic_tweets_alcolic", $value["id"], array("preProcessado" => "S", "textOriginal" => $textoOriginal, "textParser" => $texto, "hashtags" => implode(",", $hashTags), "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo, "diaSemana" => $diaSemana, "hora" => $hora, "data" => $dataConvertida, "idUser" => $idUsuario));
-
-        #Substituições
-        #HashTags
-        #Emotions
-        #Hora
-        #Remover alongamentos
+        if ($value["textParser"] != $texto) {
+            update("semantic_tweets_alcolic", $value["id"], array("preProcessado" => "S", "textParser" => $texto));
+        }
     } catch (Exception $e) {
         var_dump($e->getMessage());
     }

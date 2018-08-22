@@ -4,22 +4,27 @@ require_once("config.php");
 
 estaAtivo("erros");
 
-$tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND erros = -1 LIMIT 300");
+// $tweets = query("SELECT * FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = \'S' AND erros = -1 LIMIT 300");
+$tweets = query("SELECT id, tweet, textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND erros > 0 AND id NOT IN (9191217742, 22714356041, 32819036274302976, 37198371521302528, 37199018786299904, 45825961341616128,51236077574422528, 52709115063058432) LIMIT 1");
 
 $ind = 0;
-foreach (getRows($tweets) as $key => $value) {
-	$totalErros = 0;
+ foreach (getRows($tweets) as $key => $value) {
+ 	$totalErros = 0;
+	$originalText = $value["textParser"];
 	$texto = clear($value["textParser"]);
+
 	try {
 		$spell = spell($texto);
 		$spellJSON = json_decode($spell);
+
 		if (count($spellJSON->corrections)) {
 			$totalErros = 0;
 			foreach ($spellJSON->corrections as $palavraErro => $palavrasSimilares) {
-				if (ehErro($palavraErro, $palavrasSimilares)) {
-					$totalErros++;
+				if (ehErro($palavraErro, $palavrasSimilares, $originalText)) {
+					$totalErros++;					
 					//debug(array("erro" => true, "palavra" => $palavraErro, "similiares" => $palavrasSimilares));
 				} else {
+					// replace_full($originalText, $palavraErro);
 					//$totalErros--;
 					//debug(array("erro" => false, "palavra" => $palavraErro, "similiares" => $palavrasSimilares));
 				}
@@ -27,7 +32,7 @@ foreach (getRows($tweets) as $key => $value) {
 		} else {
 			//debug("TEXTO CORRETO");
 		}
-		update("semantic_tweets_alcolic", $value["id"], array("erros" => $totalErros, "jsonErros" => $spell));
+		update("semantic_tweets_alcolic", $value["id"], array("erros" => $totalErros, "jsonErros" => $spell, "textParser" => $originalText));
 	} catch (Exception $e) {
 		debug($e->getMessage());
 	}
@@ -38,37 +43,6 @@ foreach (getRows($tweets) as $key => $value) {
 }
 
 function spell($text) {
-    /*$curl = curl_init();
-
-    curl_setopt_array($curl, array(
-      CURLOPT_URL => "http://www.webspellchecker.net/spellcheck3/script/ssrv.cgi?cmd=check_spelling&customerid=1:r23Az2-kjwhU3-tDJn21-PKJhH-uJmzy1-xAo9o1-OhAyz3-0GjRk3-xSYqy4-WL3r54-o7NJ61-Kx8&version=1.0&out_type=words&slang=en_US&callback=cc&format=json&text=" . urlencode($text),
-      CURLOPT_RETURNTRANSFER => true,
-      CURLOPT_ENCODING => "",
-      CURLOPT_MAXREDIRS => 10,
-      CURLOPT_TIMEOUT => 30,
-      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-      CURLOPT_CUSTOMREQUEST => "GET",
-      CURLOPT_HTTPHEADER => array(
-        "Cache-Control: no-cache",
-        "Postman-Token: 079315ca-13b5-a4e7-a321-682276dcb0d6"
-      ),
-    ));
-
-    $response = curl_exec($curl);
-    $err = curl_error($curl);
-    $httpcode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
-
-    curl_close($curl);
-
-    debug($httpcode);
-    debug($response);
-
-    if ($err) {
-      echo "cURL Error #:" . $err;
-    } else {
-      echo $response;
-  }*/
-
   $token = "lGazgCQaIgmshqsTCM14e16ZFWoXp1eRDWOjsnvwvYEM3SUdn1";
   if (rand(0, 1)) {
   	$token = "9v2CvSfHZAmshXDNOhNV3qHyQeaap1Ggt0hjsneNotKCh7n7Ja";
@@ -118,29 +92,45 @@ function replaceRisos($texto) {
 }
 
 function clear($texto) {
-	$texto = strtolower($texto);
+	// $texto = strtolower($texto);
 	$texto = str_ireplace("#mention", "", $texto);
 	$texto = str_ireplace("#url", "", $texto);
 	$texto = str_ireplace("#media", "", $texto);
 	$texto = str_ireplace("\n", "", $texto);
+	$texto = removeEmoji($texto);
+	$texto = removeTextualEmojis($texto);
+	$texto = str_ireplace("?", " ", $texto);
+	$texto = str_ireplace("!", " ", $texto);
+	$texto = str_ireplace('"', " ", $texto);
 	$texto = replaceRisos($texto);
 
-  //Remover urls
+  	//Remover urls
 	$regex = "@(https?://([-\w\.]+[-\w])+(:\d+)?(/([\w/_\.#-]*(\?\S+)?[^\.\s])?)?)@";
 	$texto = preg_replace($regex, '', $texto);
 
 	return trim($texto);
 }
 
-function ehErro($palavraComErro, $sugestoes = array()) {
+function replace_full(&$text, $error, $replacement) {
+	$pattern = "/\b" . $error . "\b/i";
+	if (preg_match_all($pattern, $text, $matches)) {
+		if (count($matches) == 1) {
+			$text = preg_replace($pattern, $replacement, $text);
+		}
+    }
+ }
+
+function ehErro($palavraComErro, $sugestoes = array(), &$originalText) {
 	$girias = array("LOL", "OMG", "ILY", "LMAO", "WTF", "PPL", "IDK", "TBH", "BTW", "THX", "SMH", "FFS", "AMA", "FML", "TBT", "JK", "IMO", "YOLO", "ROFL", "MCM", "IKR", "FYI", "BRB", "GG", "IDC", "TGIF", "NSFW", "ICYMI", "STFU", "WCW", "IRL", "BFF", "OOTD", "FTW", "Txt", "HMU", "HBD", "TMI", "NM", "GTFO", "NVM", "DGAF", "FBF", "DTF", "FOMO", "SMFH", "OMW", "POTD", "LMS", "GTG", "ROFLMAO", "TTYL", "AFAIK", "LMK", "PTFO", "SFW", "HMB", "TTYS", "FBO", "TTYN");
 	$redesSociais = array("facebook", "youtube", "whatsapp", "snapchat", "twitter", "instagram", "snapchats");
 
-	$errosConhecidos = array("crossfit", "mardigras", "mardi", "gras");
+	$errosConhecidos = array("crossfit", "mardigras", "mardi", "gras", "mard", "gra");
 
 	if (strlen($palavraComErro) <= 2) {
 		return false;
 	}
+
+	// debug("ER:: " . $palavraComErro);
 
 	if (in_array(strtoupper($palavraComErro), $girias)) {
 		return false;
@@ -152,10 +142,15 @@ function ehErro($palavraComErro, $sugestoes = array()) {
 		return false;
 	}
 
-	$palavraComErro = strtolower($palavraComErro);		
+	$palavraComErro = strtolower($palavraComErro);
 
 	foreach ($sugestoes as $keySugestao => $sugestao) {
 		$sugestao = strtolower($sugestao);
+
+		if ($sugestao == $palavraComErro) {
+			return false;
+		}
+
 		if (strlen($palavraComErro) >= strlen($sugestao)) {
 			if (levenshtein($palavraComErro, $sugestao, 1, 2, 1) == 1) {
 				$keyWordTwo = 0;
@@ -171,11 +166,47 @@ function ehErro($palavraComErro, $sugestoes = array()) {
 				}
 				if ($sucesso) {
 //					debug("CASE levenshtein(str1, str2)");
+					replace_full($originalText, $palavraComErro, $sugestao);
 					return false;
 				}
 			}
 		}
 	}
-
 	return true;
+}
+
+function removeEmoji($text) {
+
+    $clean_text = "";
+
+    // Match Emoticons
+    $regexEmoticons = '/[\x{1F600}-\x{1F64F}]/u';
+    $clean_text = preg_replace($regexEmoticons, '', $text);
+
+    // Match Miscellaneous Symbols and Pictographs
+    $regexSymbols = '/[\x{1F300}-\x{1F5FF}]/u';
+    $clean_text = preg_replace($regexSymbols, '', $clean_text);
+
+    // Match Transport And Map Symbols
+    $regexTransport = '/[\x{1F680}-\x{1F6FF}]/u';
+    $clean_text = preg_replace($regexTransport, '', $clean_text);
+
+    // Match Miscellaneous Symbols
+    $regexMisc = '/[\x{2600}-\x{26FF}]/u';
+    $clean_text = preg_replace($regexMisc, '', $clean_text);
+
+    // Match Dingbats
+    $regexDingbats = '/[\x{2700}-\x{27BF}]/u';
+    $clean_text = preg_replace($regexDingbats, '', $clean_text);
+
+    $clean_text = preg_replace('/([0-9#][\x{20E3}])|[\x{00ae}\x{00a9}\x{203C}\x{2047}\x{2048}\x{2049}\x{3030}\x{303D}\x{2139}\x{2122}\x{3297}\x{3299}][\x{FE00}-\x{FEFF}]?|[\x{2190}-\x{21FF}][\x{FE00}-\x{FEFF}]?|[\x{2300}-\x{23FF}][\x{FE00}-\x{FEFF}]?|[\x{2460}-\x{24FF}][\x{FE00}-\x{FEFF}]?|[\x{25A0}-\x{25FF}][\x{FE00}-\x{FEFF}]?|[\x{2600}-\x{27BF}][\x{FE00}-\x{FEFF}]?|[\x{2900}-\x{297F}][\x{FE00}-\x{FEFF}]?|[\x{2B00}-\x{2BF0}][\x{FE00}-\x{FEFF}]?|[\x{1F000}-\x{1F6FF}][\x{FE00}-\x{FEFF}]?/u', '', $clean_text);
+    return $clean_text;
+}
+
+function removeTextualEmojis($text) {
+	$textualEmojis = array("<3", "</3", ":')", ":'-)", ":D", ":-D", "=D", ":)", ":-)", "=]", "=)", ":]", "':)", "':-)", "'=)", "':D", "':-D", "'=D", ">:)", ">;)", ">:-)", ">=)", ";)", ";-)", "*-)", "*)", ";-]", ";]", ";D", ";^)", "':(", "':-(", "'=(", ":*", ":-*", "=*", ":^*", ">:P", "X-P", "x-p", ">:[", ":-(", ":(", ":-[", ":[", "=(", ">:(", ">:-(", ":@", ":'(", ":'-(", ";(", ";-(", ">.<", "D:", ":$", "=$", "#-)", "#)", "%-)", "%)", "X)", "X-)", "*\\0/*", "\\0/", "*\\O/*", "\\O/", "O:-)", "0:-3", "0:3", "0:-)", "0:)", "0;^)", "O:-)", "O:)", "O;-)", "O=)", "0;-)", "O:-3", "O:3", "B-)", "B)", "8)", "8-)", "B-D", "8-D", "-_-", "-__-", "-___-", ">:\\", ">:/", ":-/", ":-.", ":/", ":\\", "=/", "=\\", ":L", "=L", ":P", ":-P", "=P", ":-p", ":p", "=p", ":-Þ", ":Þ", ":þ", ":-þ", ":-b", ":b", "d:", ":-O", ":O", ":-o", ":o", "O_O", ">:O", ":-X", ":X", ":-#", ":#", "=X", "=x", ":x", ":-x", "=#");
+	foreach ($textualEmojis as $key => $value) {
+		$text = str_ireplace($value, "", $text);
+	}
+	return $text;
 }
