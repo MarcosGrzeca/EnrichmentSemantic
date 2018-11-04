@@ -12,7 +12,7 @@ PASSOS
 <br/>
 <a href='extrair_user_id.php'>Extrair user_id</a> FEITO
 <br/>
-<a href='coletar_sober_tweets.php'>Coletar sober tweets da API</a> RODANDO
+<a href='coletar_sober_tweets.php'>Coletar sober tweets da API</a> FEITO
 <br/>
 <a href='excluir_possui_url.php'>Excluir possui URL</a> RODANDO
 <br/>
