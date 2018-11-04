@@ -14,5 +14,9 @@ PASSOS
 <br/>
 <a href='coletar_sober_tweets.php'>Coletar sober tweets da API</a> RODANDO
 <br/>
+<a href='excluir_possui_url.php'>Excluir possui URL</a>
+<br/>
+<a href='processar_tweets.php'>Processar tweets</a>
+<br/>
 </body>
 </html>
