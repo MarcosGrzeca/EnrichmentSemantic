@@ -5,7 +5,7 @@ require_once("../config.php");
 set_time_limit(280);
 
 do {
-    $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE drunk = 'A' AND possuiURL = -1 LIMIT 200");
+    $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE drunk = 'A' AND possuiURL = -1 LIMIT 2000");
     
     $sim = array();
     $nao = array();
