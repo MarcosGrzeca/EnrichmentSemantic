@@ -2,7 +2,7 @@
 
 require_once("../config.php");
 
-set_time_limit(240);
+set_time_limit(280);
 
 do {
     $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE drunk = 'A' AND possuiURL = -1 LIMIT 200");
@@ -33,6 +33,6 @@ do {
     if (count($nao)) {
         query("UPDATE chat_tweets SET possuiURL = 0 WHERE id IN (" . implode(",", $nao) . ")");
     }
-    sleep(10);
+    sleep(5);
 } while ($rows > 0);
 ?>
