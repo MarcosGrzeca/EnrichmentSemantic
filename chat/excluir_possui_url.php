@@ -33,6 +33,6 @@ do {
     if (count($nao)) {
         query("UPDATE chat_tweets SET possuiURL = 0 WHERE id IN (" . implode(",", $nao) . ")");
     }
-    sleep(2);
+    sleep(4);
 } while ($rows > 0);
 ?>
