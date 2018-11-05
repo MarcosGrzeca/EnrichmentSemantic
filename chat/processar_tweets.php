@@ -102,7 +102,7 @@ foreach (getRows($tweets) as $key => $value) {
         // , "emoticonPos" => $totalPositivo, "emoticonNeg" => $totalNegativo
 
         if ($value["situacao"] == 1) {
-            $fieldsAtualizado["textOriginal"] = $textoOriginal;
+            // $fieldsAtualizado["textoOriginal"] = $textoOriginal;
             $fieldsAtualizado["diaSemana"] = $diaSemana;
             $fieldsAtualizado["hora"] = $hora;
             $fieldsAtualizado["data"] = $dataConvertida;
