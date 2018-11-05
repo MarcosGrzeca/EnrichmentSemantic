@@ -14,11 +14,11 @@ PASSOS
 <br/>
 <a href='coletar_sober_tweets.php'>Coletar sober tweets da API</a> FEITO
 <br/>
-<a href='excluir_possui_url.php'>Excluir possui URL</a> RODANDO
+<a href='excluir_possui_url.php'>Excluir possui URL</a> FEITO
 <br/>
-<a href='excluir_tweets_mais.php'>Deletar tweets que excedem 50 por usuário</a>
+<a href='excluir_tweets_mais.php'>Deletar tweets que excedem 7 por usuário</a> FEITO
 <br/>
-<a href='processar_tweets.php'>Processar tweets</a>
+<a href='processar_tweets.php'>Processar tweets</a> RODANDO
 <br/>
 <a href='error_handling.php'>Error handling</a>
 <br/>

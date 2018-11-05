@@ -5,33 +5,16 @@ require_once("../config.php");
 set_time_limit(280);
 
 do {
-    $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE drunk = 'A' AND possuiURL = -1 LIMIT 200");
+    $tweets = query("SELECT count(*) as total, user_id FROM chat_tweets WHERE drunk = 'A' GROUP BY user_id HAVING(total) > 7 LIMIT 1000");
     
-    $sim = array();
-    $nao = array();
-    $ind = 0;
     $rows = getNumRows($tweets);
     foreach (getRows($tweets) as $key => $value) {
-        try {
-            if (preg_match('~(https?://([-\w\.]+)+(:\d+)?(/([\w/_\.]*(\?\S+)?)?)?)~', $value["textoOriginal"])) {
-                $sim[] = $value["id"];
-            } else {
-                $nao[] = $value["id"];
-            }
-        } catch (Exception $e) {
-            var_dump($e->getMessage());
-        }
-        if ($ind > 10) {
-            //break;
-        }
-        $ind++;
-    }
+        if ($value["user_id"] > 0) {
 
-    if (count($sim)) {
-       query("DELETE FROM chat_tweets WHERE id IN (" . implode(",", $sim) . ")");
-    }
-    if (count($nao)) {
-        query("UPDATE chat_tweets SET possuiURL = 0 WHERE id IN (" . implode(",", $nao) . ")");
+            $limite = $value["total"] - 7;
+            $sql = "DELETE FROM chat_tweets WHERE drunk = 'A' AND user_id = '" . $value["user_id"] . "' LIMIT " . $limite;
+            query($sql);
+        }
     }
     sleep(5);
 } while ($rows > 0);
