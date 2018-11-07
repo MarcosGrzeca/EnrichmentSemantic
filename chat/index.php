@@ -18,7 +18,7 @@ PASSOS
 <br/>
 <a href='excluir_tweets_mais.php'>Deletar tweets que excedem 7 por usuário</a> FEITO
 <br/>
-<a href='processar_tweets.php'>Processar tweets</a> RODANDO
+<a href='processar_tweets.php'>Processar tweets</a> FEITO
 <br/>
 <a href='error_handling.php'>Error handling</a>
 <br/>
