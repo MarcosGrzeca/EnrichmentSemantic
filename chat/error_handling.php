@@ -4,7 +4,7 @@ require_once("../config.php");
 
 set_time_limit(290);
 
-$tweets = query("SELECT * FROM chat_tweets WHERE situacao = 1 AND processado = 1 AND erros = -1 LIMIT 200");
+$tweets = query("SELECT * FROM chat_tweets WHERE processado = 1 AND erros = -1 LIMIT 200");
 
 $ind = 0;
  foreach (getRows($tweets) as $key => $value) {
