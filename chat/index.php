@@ -26,5 +26,7 @@ PASSOS
 <br/>
 <a href='dbpedia_entities.php'>Entities extraction</a> RODANDO
 <br/>
+<a href='types_extraction.php'>Types extraction</a> RODANDO
+<br/>
 </body>
 </html>
