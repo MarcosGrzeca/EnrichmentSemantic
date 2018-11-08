@@ -14,7 +14,7 @@ if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER BY id ";
 }
 
-$sqlIni .= "LIMIT 100";
+$sqlIni .= "LIMIT 200";
 
 $tweets = query($sqlIni);
 
