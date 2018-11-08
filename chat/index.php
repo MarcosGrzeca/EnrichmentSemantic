@@ -20,7 +20,9 @@ PASSOS
 <br/>
 <a href='processar_tweets.php'>Processar tweets</a> FEITO
 <br/>
-<a href='error_handling.php'>Error handling</a>
+<a href='error_handling.php'>Error handling</a> FEITO
+<br/>
+<a href='semantic_enrichment.php'>Enriquecimento semântico</a>
 <br/>
 </body>
 </html>
