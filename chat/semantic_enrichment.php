@@ -120,7 +120,7 @@ function alchemy($texto, $idioma = "") {
 
 	//$tokens = array("ZjQ5MmVlY2ItYjZkOC00NzY0LWIyNDctYzkzNzZkMzA0ZjRkOmN6anhVYWNHUE1YeA==", "ZTBjYTdhMzctMmE1OC00ZDI2LTlmNzUtMGUwN2EwYTFhMmRmOk9aVFJ0YUM2MklqOA==", "ZjVjYTgwMjgtMDk3ZC00MmEzLThiM2ItODc4MjJjZWM3Njk5OlJyYTdGMmREVFNIeg==", "YTY1NjQ1MTUtMGFiNy00NzQ4LTg4MWUtMjgwYTY1MDZjMWUxOkFnU0VsT1ppZ1loTA==", "YTg5ZDNmNmMtNmZhZi00NTBiLTg0ZWQtMjViNjk3ZmJlNDZjOnZRUUJSMnd5RFN0Rg==");
 	// $tokens = array("ZTBjYTdhMzctMmE1OC00ZDI2LTlmNzUtMGUwN2EwYTFhMmRmOk9aVFJ0YUM2MklqOA==", "ZjVjYTgwMjgtMDk3ZC00MmEzLThiM2ItODc4MjJjZWM3Njk5OlJyYTdGMmREVFNIeg==", "YTY1NjQ1MTUtMGFiNy00NzQ4LTg4MWUtMjgwYTY1MDZjMWUxOkFnU0VsT1ppZ1loTA==", "YTg5ZDNmNmMtNmZhZi00NTBiLTg0ZWQtMjViNjk3ZmJlNDZjOnZRUUJSMnd5RFN0Rg==");
-	$tokens = array("YTg5ZDNmNmMtNmZhZi00NTBiLTg0ZWQtMjViNjk3ZmJlNDZjOnZRUUJSMnd5RFN0Rg==");
+	$tokens = array("ZDMyYTQxNzgtODdlMC00MjBkLThiMDEtZGQ4YmI3NDgxYWE2OlpBWXNSWTdJUzJjdg==");
 	$token = $tokens[rand(0,count($tokens) - 1)];
 
 	debug($token);
