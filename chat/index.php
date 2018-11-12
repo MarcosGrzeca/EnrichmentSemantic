@@ -28,7 +28,9 @@ PASSOS
 <br/>
 <a href='types_extraction.php'>Types extraction</a> FEITO
 <br/>
-<a href='possui_termos.php'>Classificar tweets</a>
+<a href='possui_termos.php'>Classificar tweets</a> FEITO
+<br/>
+<a href='remover_regras_controle.php'>Remover palavras controle</a> RODANDO
 <br/>
 </body>
 </html>
