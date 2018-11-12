@@ -30,7 +30,9 @@ PASSOS
 <br/>
 <a href='possui_termos.php'>Classificar tweets</a> FEITO
 <br/>
-<a href='remover_regras_controle.php'>Remover palavras controle</a> RODANDO
+<a href='remover_regras_controle.php'>Remover palavras controle</a>
+<br/>
+<a href='remover_regras_controle_embedding.php'>Remover palavras controle embedding</a> RODANDO
 <br/>
 </body>
 </html>
