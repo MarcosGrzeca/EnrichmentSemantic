@@ -2,7 +2,7 @@
 
 require_once("../config.php");
 
-set_time_limit(290);
+set_time_limit(260);
 
 // $tweets = query("SELECT DISTINCT(palavra) as palavra FROM chat_tweets_nlp WHERE NOT EXISTS (SELECT id FROM chat_tweets_conceito WHERE chat_tweets_conceito.palavra = chat_tweets_nlp.palavra) AND tipo = 'E' ");
 $tweets = query("SELECT DISTINCT(palavra) as palavra FROM chat_tweets_nlp WHERE NOT EXISTS (SELECT id FROM chat_tweets_conceito WHERE chat_tweets_conceito.palavra = chat_tweets_nlp.palavra) AND tipo IN ('CO', 'K') ");
@@ -13,7 +13,7 @@ if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id ";
 }
 
-$sqlIni .= "LIMIT 100";
+$sqlIni .= "LIMIT 50";
 
 $ind = 0;
 foreach (getRows($tweets) as $key => $value) {
