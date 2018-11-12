@@ -24,9 +24,11 @@ PASSOS
 <br/>
 <a href='semantic_enrichment.php'>Enriquecimento semântico</a> FEITO
 <br/>
-<a href='dbpedia_entities.php'>Entities extraction</a> RODANDO
+<a href='dbpedia_entities.php'>Entities extraction</a> FEITO
 <br/>
-<a href='types_extraction.php'>Types extraction</a> RODANDO
+<a href='types_extraction.php'>Types extraction</a> FEITO
+<br/>
+<a href='possui_termos.php'>Classificar tweets</a>
 <br/>
 </body>
 </html>
