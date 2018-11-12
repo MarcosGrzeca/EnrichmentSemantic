@@ -9,7 +9,7 @@ do {
     $drunkTwo = array();
     $sober = array();
 
-    $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE textEmbedding IS NULL LIMIT 100");
+    $tweets = query("SELECT id, textoOriginal FROM chat_tweets WHERE contabilizar = 1 AND textEmbedding IS NULL LIMIT 100");
     $num = getNumRows($tweets);
     foreach (getRows($tweets) as $key => $value) {
         $textoRetornado = removerExpressao($value["textoOriginal"]);
