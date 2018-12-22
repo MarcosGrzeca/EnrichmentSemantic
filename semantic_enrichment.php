@@ -6,7 +6,7 @@ set_time_limit(300);
 
 estaAtivo("enriquecer");
 
-$sqlIni = "SELECT id, textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' ";
+$sqlIni = "SELECT id, textSemHashtagsControle as textParser FROM semantic_tweets_alcolic WHERE situacao = 1 AND preProcessado = 'S' AND enriquecido = 'N' ";
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by possuiURL, id desc ";
