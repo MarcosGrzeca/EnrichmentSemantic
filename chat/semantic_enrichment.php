@@ -6,7 +6,8 @@ set_time_limit(290);
 
 #estaAtivo("enriquecer");
 
-$sqlIni = "SELECT id, textParser FROM chat_tweets WHERE processado = 1 AND enriquecido = 'N' ";
+// $sqlIni = "SELECT id, textParser FROM chat_tweets WHERE processado = 1 AND enriquecido = 'N' ";
+$sqlIni = "SELECT id, textSemPalavrasControle as textParser FROM chat_tweets WHERE processado = 1 AND enriquecido = 'N' ";
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER BY id desc ";

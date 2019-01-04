@@ -22,11 +22,11 @@ PASSOS
 <br/>
 <a href='error_handling.php'>Error handling</a> FEITO
 <br/>
-<a href='semantic_enrichment.php'>Enriquecimento semântico</a> FEITO
+<a href='semantic_enrichment.php'>Enriquecimento semântico</a> REFAZENDO
 <br/>
-<a href='dbpedia_entities.php'>Entities extraction</a> FEITO
+<a href='dbpedia_entities.php'>Entities extraction</a> REFAZER
 <br/>
-<a href='types_extraction.php'>Types extraction</a> FEITO
+<a href='types_extraction.php'>Types extraction</a> REFAZER
 <br/>
 <a href='possui_termos.php'>Classificar tweets</a> FEITO
 <br/>
