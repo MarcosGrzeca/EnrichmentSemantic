@@ -35,7 +35,7 @@ if (($handle = fopen("planilhas/resultados/f1279922.csv", "r")) !== FALSE) {
 
     	//"CAN", "USA", "IND", "PHL"
     	if (!in_array($data[10], array("CAN", "USA", "IND"))) {
-    		//continue;
+    		// continue;
     	}
 
     	if (!isset($paises[$data[10]])) {
@@ -58,6 +58,83 @@ if (($handle = fopen("planilhas/resultados/f1279922.csv", "r")) !== FALSE) {
     }
     //debug($contador);
 }
+
+$dadosCSV = [];
+
+foreach ($avaliacoes as $key => $value) {
+	// $id = preg_replace('/[^0-9]/', '', $key);
+	$id = $key;
+	foreach ($value as $keyAvaliacao => $valueAvaliacao) {
+		if ($keyAvaliacao != "q2") {
+			continue;
+		}
+
+		if (count($valueAvaliacao) < 3) {
+			continue;
+		}
+		if (trim($valueAvaliacao[0] . $valueAvaliacao[1] . $valueAvaliacao[2]) != "") {
+			if ($valueAvaliacao[0] === "" || $valueAvaliacao[0] === "no") {
+				$valueAvaliacao[0] = 0;
+			}
+			if ($valueAvaliacao[0] === "yes") {
+				$valueAvaliacao[0] = 1;
+			}
+			if ($valueAvaliacao[0] === "notsure") {
+				$valueAvaliacao[0] = -1;
+			}
+			if ($valueAvaliacao[1] === "" || $valueAvaliacao[1] === "no") {
+				$valueAvaliacao[1] = 0;
+			}
+			if ($valueAvaliacao[1] === "yes") {
+				$valueAvaliacao[1] = 1;
+			}
+			if ($valueAvaliacao[1] === "notsure") {
+				$valueAvaliacao[1] = -1;
+			}
+			if ($valueAvaliacao[2] === "" || $valueAvaliacao[2] === "no") {
+				$valueAvaliacao[2] = 0;
+			}
+			if ($valueAvaliacao[2] === "yes") {
+				$valueAvaliacao[2] = 1;
+			}
+			if ($valueAvaliacao[2] === "notsure") {
+				$valueAvaliacao[2] = -1;
+			}
+			if (trim($valueAvaliacao[0] . $valueAvaliacao[1] . $valueAvaliacao[2]) == "no") {
+				continue;
+			}
+			$dadosCSV[$id . "_" . $keyAvaliacao] = [$valueAvaliacao[0], $valueAvaliacao[1], $valueAvaliacao[2]];
+			// $dadosCSV[$id . "_" . $keyAvaliacao] = $valueAvaliacao;
+		}
+	}
+}
+
+// $fp = fopen('kappa.csv', 'w');
+// foreach ($dadosCSV as $linha) {
+//     fputcsv($fp, $linha);
+// }
+// fclose($fp);
+
+foreach ($dadosCSV as $key => $linha) {
+	$key = str_replace("_q1", "", $key);
+	$key = str_replace("_q2", "", $key);
+	$key = str_replace("_q3", "", $key);
+	$tweets = query("SELECT id, classificado FROM semantic_tweets_alcolic WHERE situacao = 1 AND link = '" . $key . "';");
+
+	debug("SELECT id, classificado FROM semantic_tweets_alcolic WHERE situacao = 1 AND link = '" . $key . "';");
+	foreach (getRows($tweets) as $tweet) {
+		debug($tweet);
+        // update("semantic_tweets_alcolic", $tweet["id"], array("classificado" => 1, "classificador" => "Amazon", "a1" => $linha[0], "a2" => $linha[1], "a3" => $linha[2]));
+	}
+}
+
+echo "<pre>";
+print_r($dadosCSV);
+die;
+
+
+print_r($avaliacoes);
+die;
 
 
 

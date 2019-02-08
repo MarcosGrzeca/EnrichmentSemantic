@@ -1,0 +1,169 @@
+<!-- HIT template: SentimentTweet-v3.0 --><!-- The following snippet enables the 'responsive' behavior on smaller screens -->
+<meta content="width=device-width,initial-scale=1" name="viewport" />
+<section class="container" id="Sentiment"><!-- Instructions (collapsible) -->
+<div class="row">
+<div class="col-xs-12 col-md-12">
+<div class="panel panel-primary"><!-- WARNING: the ids "collapseTrigger" and "instructionBody" are being used to enable expand/collapse feature --><a class="panel-heading" href="javascript:void(0);" id="collapseTrigger"><b>Instructions</b></a>
+<div class="panel-body" id="instructionBody">
+
+
+<h1>Judge if the tweet is related to alcohol consumption</h1>
+
+<br/>
+<p><b>Examples to help with answers:</b></p>
+
+<table class="table table-condensed table-striped table-responsive">
+	<thead>
+		<tr>
+			<th>Tweet example</th>
+			<th>Response</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>So lets just stay in the moment, smoke some weed, drink some wine</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>Kendall Day before the wedding, wedding reception with open bar, then after party downtown. Holy shit tomorrow is going to kick ass.</td>
+			<td>Yes</td>
+		</tr>
+		<tr>
+			<td>@CollinDSchuck Its alcohol and emotions I hope Montreal takes it just as seriously. Who can forget all the rally towel related injuries haha</td>
+			<td>No</td>
+		</tr>
+		<tr>
+			<td>@_illestOut_: @NaiShekirah I graduate this year turn up"aye me too, Turnup . Class 2014</td>
+			<td>No</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<!-- End instructions --><!-- Categorization Layout -->
+
+<div class="row" id="workContent">
+<div class="col-xs-12 col-sm-12 content"><label>Tweet:</label>
+
+<div class="well tweet-box"><input id="twitterOembed" type="hidden" value="${tweet_url}" /></div>
+</div>
+</div>
+
+<section>
+<fieldset>
+<h4><label>Tweet is about the tweeter drinking alcohol?</label></h4>
+
+<div class="radio"><label><input required name="Q2Answer" type="radio" value="y" />Yes</label></div>
+
+<div class="radio"><label><input required name="Q2Answer" type="radio" value="n" />No</label></div>
+
+<div class="radio"><label><input required name="Q2Answer" type="radio" value="s" />Not sure</label></div>
+</fieldset>
+</section>
+
+</section>
+<!-- End Categorization Layout --><!-- Please note that Bootstrap CSS/JS and JQuery are 3rd party libraries that may update their url/code at any time. Amazon Mechanical Turk (MTurk) is including these libraries as a default option for you, but is not responsible for any changes to the external libraries --><!-- External CSS references -->
+<link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" rel="stylesheet" /><!-- Open internal style sheet -->
+<style type="text/css">#collapseTrigger{
+  color:#fff;
+  display: block;
+  text-decoration: none;
+}
+#submitButton{
+  white-space: normal;
+}
+#instructionBody table{
+  font-size: 14px;
+  margin-top: 10px;
+}
+#instructionBody table caption{
+  text-align: left;
+  padding: 0 0 5px 0;
+}
+#Inputs{
+  display: block;
+}
+.content{
+  margin-bottom: 15px;
+}
+.radio:first-of-type{
+  margin-top: -5px;
+}
+.tweet-box.error{
+  border: 1px solid red;
+}
+</style>
+<!-- Close internal style sheet --><!-- External JS references --><script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Open internal javascript --><script>
+  $(document).ready(function() {
+    // Instructions expand/collapse
+    var content = $('#instructionBody');
+    var trigger = $('#collapseTrigger');
+    //content.hide();
+    $('.collapse-text').text('(Click to expand)');
+    trigger.click(function(){
+      content.toggle();
+      var isVisible = content.is(':visible');
+      if(isVisible){
+        $('.collapse-text').text('(Click to collapse)');
+      }else{
+        $('.collapse-text').text('(Click to expand)');
+      }
+    });
+    // end expand/collapse
+
+    // highlight selected category
+    var inputs = $("#Inputs input:radio");
+    inputs.change(function(){
+      inputs.parent().removeClass("btn-success");
+      inputs.parent().addClass("btn-default");
+      if($(this).is(":checked")){
+        $(this).parent().removeClass("btn-default");
+        $(this).parent().addClass("btn-success");
+      }else{
+        $(this).parent().removeClass("btn-success");
+        $(this).parent().addClass("btn-default");
+      }
+    });
+    // end highlight
+
+    // get Tweet using oembed
+    var url = $("#twitterOembed").val();
+    if (url==""){
+      $(".tweet-box").addClass("error");
+    }
+    else {
+      $.ajax({
+        url: "https://api.twitter.com/1/statuses/oembed.json?hide_thread=true&align=center&url="+url,
+        dataType: "jsonp",
+        success: function(data){
+          $(".tweet-box").html(data.html);
+        }
+      });
+    }
+    // end get Tweet
+  });
+
+  function verificarQ2() {
+    if ($('input[name="Q1Answer"]:checked').val() == "y") {
+      $("#sectionQ2").removeClass("hide");
+      $('input[name="Q2Answer"]').prop("required", true);
+      verificarQ3();
+    } else {
+    $('input[name="Q2Answer"]').prop("required", false);
+      $("#sectionQ2").addClass("hide");
+      $("#sectionQ3").addClass("hide");
+    }
+  }
+
+  function verificarQ3() {
+    if ($('input[name="Q2Answer"]:checked').val() == "y") {
+      $("#sectionQ3").removeClass("hide");
+      $('input[name="Q3Answer"]').prop("required", true);
+    } else {
+      $("#sectionQ3").addClass("hide");
+      $('input[name="Q3Answer"]').prop("required", false);
+    }
+  }
+</script><!-- Close internal javascript -->
