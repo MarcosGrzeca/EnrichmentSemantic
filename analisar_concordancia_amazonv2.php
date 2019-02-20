@@ -5,7 +5,8 @@ require_once("config.php");
 // $files = array("planilhas/Batch_3523119_batch_results.csv", "planilhas/Batch_3515675_batch_results.csv", "planilhas/Batch_3521895_batch_results.csv", "planilhas/Batch_3521951_batch_results.csv", "planilhas/Batch_3521993_batch_results.csv", "planilhas/Batch_3523241_batch_results.csv", "planilhas/Batch_3524454_batch_results.csv", "planilhas/Batch_3526694_batch_results.csv", "planilhas/Batch_3526743_batch_results.csv", "planilhas/Batch_3527050_batch_results.csv", "planilhas/Batch_3527093_batch_results.csv", "planilhas/Batch_3527559_batch_results.csv", "planilhas/Batch_3527584_batch_results.csv", "planilhas/Batch_3527886_batch_results.csv", "planilhas/Batch_3531458_batch_results.csv", "planilhas/Batch_3534492_batch_results.csv");
 // $files = array("planilhas/Batch_3535981_batch_results.csv"); //Faltando 1
 // $files = array("planilhas/Batch_3536013_batch_results.csv", "planilhas/Batch_3536041_batch_results.csv"); //Faltando 2
-$files = array("planilhas/Batch_3537406_batch_results.csv");
+// $files = array("planilhas/Batch_3537406_batch_results.csv");
+$files = array("planilhas/Batch_3538973_batch_results.csv");
 
 foreach ($files as $file) {
     $avaliacoes = [];
