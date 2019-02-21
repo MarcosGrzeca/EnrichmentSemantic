@@ -2,6 +2,8 @@
 
 require_once("config.php");
 
+set_time_limit(900);
+
 echo "<pre>";
 $files = array("planilhas/resultados/f1279922.csv");
 
@@ -45,13 +47,13 @@ foreach ($files as $file) {
             $contador++;
 
             if ($contador > 100) {
-                break;
+                // break;
             }
         }
     }
 }
 
-debug($uteis);
+print_r($uteis);
 
 echo "</pre>";
 ?>
