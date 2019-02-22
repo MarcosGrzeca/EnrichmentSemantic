@@ -4,7 +4,7 @@ require_once("../config.php");
 
 set_time_limit(290);
 
-$tweets = query("SELECT * FROM tweets_amazon WHERE preProcessado = 1 AND erros = -1 LIMIT 100");
+$tweets = query("SELECT * FROM tweets_amazon WHERE preProcessado = 1 AND erros = -1 LIMIT 500");
 
 $ind = 0;
  foreach (getRows($tweets) as $key => $value) {
