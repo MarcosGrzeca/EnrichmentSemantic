@@ -2,7 +2,7 @@
 
 require_once("config.php");
 
-set_time_limit(900);
+set_time_limit(10);
 
 echo "<pre>";
 $files = array("planilhas/resultados/f1279922.csv");
@@ -19,7 +19,8 @@ foreach ($files as $file) {
             $q3 = $data[16];
             $link = $data[21];
 
-            if (empty($q2)) {
+            // if (empty($q2)) {
+            if (strtolower($q2) != "yes") {
                 continue;
             }
 
@@ -36,12 +37,10 @@ foreach ($files as $file) {
             $avaliacoes[$link]["q2"][] = $q2;
             $avaliacoes[$link]["q3"][] = $q3;
 
-            $tweets = query("SELECT id, classificado FROM semantic_tweets_alcolic WHERE situacao = 1 AND classificado = 0 AND link = '" . $link . "';");
-            // foreach (getRows($tweets) as $tweet) {
-
-            // }
-
-            if (getNumRows($tweetSearch) > 0) {
+            //$tweets = query("SELECT id, classificado FROM semantic_tweets_alcolic WHERE situacao = 1 AND classificado = 0 AND link = '" . $link . "';");
+            $tweets = query("SELECT id FROM semantic_tweets WHERE link = '" . $link . "';");
+            
+            if (getNumRows($tweets) > 0) {
                 $uteis++;
             }
             $contador++;
@@ -49,6 +48,7 @@ foreach ($files as $file) {
             if ($contador > 100) {
                 // break;
             }
+            // break;
         }
     }
 }

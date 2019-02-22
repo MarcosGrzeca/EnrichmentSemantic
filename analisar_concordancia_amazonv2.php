@@ -6,7 +6,8 @@ require_once("config.php");
 // $files = array("planilhas/Batch_3535981_batch_results.csv"); //Faltando 1
 // $files = array("planilhas/Batch_3536013_batch_results.csv", "planilhas/Batch_3536041_batch_results.csv"); //Faltando 2
 // $files = array("planilhas/Batch_3537406_batch_results.csv");
-$files = array("planilhas/Batch_3538973_batch_results.csv");
+// $files = array("planilhas/Batch_3538973_batch_results.csv");
+$files = array("planilhas/Batch_3540441_batch_results.csv");
 
 foreach ($files as $file) {
     $avaliacoes = [];
@@ -44,12 +45,6 @@ foreach ($files as $file) {
             if (isset($linha[2])) {
                 $aUpdate["a3"] = $linha[2];
             }
-            // if (isset($linha[0])) {
-            //     $aUpdate["a2"] = $linha[0];
-            // }
-            // if (isset($linha[1])) {
-            //     $aUpdate["a3"] = $linha[1];
-            // }
             update("semantic_tweets_alcolic", $tweet["id"], $aUpdate);
         }
     }
