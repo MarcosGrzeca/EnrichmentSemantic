@@ -4,8 +4,7 @@ require_once("../config.php");
 
 set_time_limit(260);
 
-// $tweets = query("SELECT DISTINCT(palavra) as palavra FROM chat_tweets_nlp WHERE NOT EXISTS (SELECT id FROM chat_tweets_conceito WHERE chat_tweets_conceito.palavra = chat_tweets_nlp.palavra) AND tipo = 'E' ");
-$tweets = query("SELECT DISTINCT(palavra) as palavra FROM chat_tweets_nlp WHERE NOT EXISTS (SELECT id FROM chat_tweets_conceito WHERE chat_tweets_conceito.palavra = chat_tweets_nlp.palavra) AND tipo IN ('CO', 'K') ");
+$tweets = query("SELECT DISTINCT(palavra) as palavra FROM tweets_amazon_nlp WHERE NOT EXISTS (SELECT id FROM tweets_amazon_conceito WHERE tweets_amazon_conceito.palavra = tweets_amazon_nlp.palavra) AND tipo IN ('CO', 'K') ");
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER by id desc ";
@@ -21,12 +20,11 @@ foreach (getRows($tweets) as $key => $value) {
 		$dbpedia = dbpedia($value["palavra"]);
 		$dbpediaJSON = json_decode($dbpedia, true);
 		if (isset($dbpediaJSON["Resources"])) {
-			debug($dbpediaJSON);
 			foreach ($dbpediaJSON["Resources"] as $keyR => $valueR) {
-				insert("chat_tweets_conceito", array("palavra", "resource", "json", "sucesso", "similarityScore"), array($value["palavra"], $valueR["@URI"], $dbpedia, 1, $valueR["@similarityScore"]));
+				insert("tweets_amazon_conceito", array("palavra", "resource", "json", "sucesso", "similarityScore"), array($value["palavra"], $valueR["@URI"], $dbpedia, 1, $valueR["@similarityScore"]));
 			}
 		} else {
-			insert("chat_tweets_conceito", array("palavra", "resource", "json", "sucesso"), array($value["palavra"], NULL, $dbpedia, 0));
+			insert("tweets_amazon_conceito", array("palavra", "resource", "json", "sucesso"), array($value["palavra"], NULL, $dbpedia, 0));
 		}
     } catch (Exception $e) {
     	var_dump($e->getMessage()); 
@@ -42,7 +40,7 @@ function dbpedia($palavra) {
 	try {
 		$curl = curl_init();
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "http://model.dbpedia-spotlight.org/en/annotate",
+			CURLOPT_URL => "http://api.dbpedia-spotlight.org/en/annotate",
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => "",
 			CURLOPT_MAXREDIRS => 10,
