@@ -171,10 +171,10 @@ function podeExecutar($ini) {
 
 $salvarBD = true;
 
-$sqlIni = "SELECT * FROM chat_tweets_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ";
+$sqlIni = "SELECT * FROM tweets_amazon_conceito WHERE sucesso = 1 AND resourceTypes IS NULL ";
 
 /*$sqlIni = "SELECT sc.*
-			FROM chat_tweets_conceito sc
+			FROM tweets_amazon_conceito sc
 			WHERE sc.sucesso = 1
 			AND sc.resourceTypes IS NULL
 			AND sc.palavra IN (
@@ -212,7 +212,7 @@ foreach (getRows($tweets) as $key => $conceito) {
 		$typesLocais = array();
 		$retorno = json_decode(getTypesResource($conceito["resource"]), true);
 		if ($salvarBD) {
-			$sql = "UPDATE `chat_tweets_conceito` SET resourceTypes = '" . escape(json_encode($retorno)) . "' WHERE id = '" . $conceito["id"] . "';";
+			$sql = "UPDATE `tweets_amazon_conceito` SET resourceTypes = '" . escape(json_encode($retorno)) . "' WHERE id = '" . $conceito["id"] . "';";
 			query($sql);
 		}
 
