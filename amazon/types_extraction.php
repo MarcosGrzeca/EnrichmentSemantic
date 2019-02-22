@@ -2,7 +2,7 @@
 
 require_once("../config.php");
 
-set_time_limit(290);
+set_time_limit(250);
 
 function getTypesResource($resource) {
 	try {
@@ -190,9 +190,9 @@ if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 }
 
 if (isset($_REQUEST["random"]) && $_REQUEST["random"] == "YES") {
-	$sqlIni .= "LIMIT " . rand(60, 10000) . ", 50 ";
+	$sqlIni .= "LIMIT " . rand(60, 10000) . ", 25 ";
 } else {
-	$sqlIni .= "LIMIT 50 ";
+	$sqlIni .= "LIMIT 25 ";
 }
 
 $tweets = query($sqlIni);
