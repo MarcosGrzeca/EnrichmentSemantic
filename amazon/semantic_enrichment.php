@@ -4,10 +4,7 @@ require_once("../config.php");
 
 set_time_limit(290);
 
-#estaAtivo("enriquecer");
-
-// $sqlIni = "SELECT id, textParser FROM chat_tweets WHERE processado = 1 AND enriquecido = 'N' ";
-$sqlIni = "SELECT id, textSemPalavrasControle as textParser FROM chat_tweets WHERE processado = 1 AND enriquecido = 'N' ";
+$sqlIni = "SELECT id, textParser, language FROM tweets_amazon WHERE preProcessado = 1 AND erros <> -1 AND enriquecido = 'N' ";
 
 if (isset($_REQUEST["order"]) && $_REQUEST["order"] == "DESC") {
 	$sqlIni .= "ORDER BY id desc ";
@@ -58,9 +55,9 @@ foreach (getRows($tweets) as $key => $value) {
     		if (isset($valueC->_typeGroup)) {
 				$typeGroup = $valueC->_typeGroup;
 				if ($valueC->_typeGroup == "entities") {
-					insert("chat_tweets_nlp", $fields, array($value["id"], "C", "E", $valueC->name, $valueC->_type));
+					insert("tweets_amazon_nlp", $fields, array($value["id"], "C", "E", $valueC->name, $valueC->_type));
 				} else if (!empty($typeGroup) && !empty($valueC->{$typeGroup})) {
-					insert("chat_tweets_nlp", $fields, array($value["id"], "C", $valueC->_typeGroup, $valueC->{$typeGroup}, NULL));
+					insert("tweets_amazon_nlp", $fields, array($value["id"], "C", $valueC->_typeGroup, $valueC->{$typeGroup}, NULL));
 				}
     		}
     	}
@@ -90,19 +87,23 @@ foreach (getRows($tweets) as $key => $value) {
 
     			foreach ($valueC as $keyTwo => $valueTwo) {
     				if ($tipo == "C") {
-    					insert("chat_tweets_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->label, NULL));
+    					insert("tweets_amazon_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->label, NULL));
     				} else if ($tipo == "CO") {
-    					insert("chat_tweets_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->text, NULL));
+    					insert("tweets_amazon_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->text, NULL));
     				} else if ($tipo == "E") {
-    					insert("chat_tweets_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->type, $valueTwo->type));
+    					insert("tweets_amazon_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->type, $valueTwo->type));
     				} else if ($tipo == "K") {
-    					insert("chat_tweets_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->text, NULL));
+    					insert("tweets_amazon_nlp", $fields, array($value["id"], "A", $tipo, $valueTwo->text, NULL));
     				}
     			}
     		}
     	}
-		// update("chat_tweets", $value["id"], array("enriquecido" => "S", "language" => $language, "calaisResponse" => $calais, "alchemyResponse" => $alchemy));
-		update("chat_tweets", $value["id"], array("enriquecido" => "S", "calaisResponse" => $calais, "alchemyResponse" => $alchemy));
+
+    	$aUpdate = ["enriquecido" => "S", "calaisResponse" => $calais, "alchemyResponse" => $alchemy];
+		if (empty($value["language"]) && !empty($language)) {
+			$aUpdate["language"] = $language;
+		}
+		update("tweets_amazon", $value["id"], $aUpdate);
     } catch (Exception $e) {
     	var_dump($e->getMessage()); 
     }
