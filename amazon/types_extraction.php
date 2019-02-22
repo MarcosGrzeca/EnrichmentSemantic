@@ -264,6 +264,7 @@ foreach (getRows($tweets) as $key => $conceito) {
 	} catch (Exception $e) {
 
 	}
+	sleep(2);
 }
 echo "Hora fim " . date("H:i:s") . "<br/>";
 var_export(json_encode($types));
