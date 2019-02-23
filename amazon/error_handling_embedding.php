@@ -31,9 +31,7 @@ $ind = 0;
         } else {
         }
 
-        if ($originalText <> $value["textEmbedding"]) {
-            update("tweets_amazon", $value["id"], array("textEmbedding" => $originalText, "errorEmbedding" => 1));
-        }
+        update("tweets_amazon", $value["id"], array("textEmbedding" => $originalText, "errorEmbedding" => 1));
     } catch (Exception $e) {
         debug($e->getMessage());
     }
