@@ -3,12 +3,14 @@
 require_once("../config.php");
 
 // $fp = fopen('/var/www/html/marcos/EnrichmentSemantic/ds3/comparativo.csv', 'w') or die("Unable to open file!");
+$fp = fopen(realpath('.') . '\parte2.csv', 'w') or die("Unable to open file!");
 
 $f1Baseline = 82.85397;
 $precisionBaseline = 75.154139;
 $recallBaseline = 92.349;
 
-$resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 AND redeId = 'FlattenGloVe' ORDER BY redeId, epocas, metricaEarly");
+// $resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 AND redeId = 'FlattenGloVe' ORDER BY redeId, epocas, metricaEarly");
+$resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 AND redeId IN ('FlattenBoW', 'FlattenGloVe') ORDER BY redeId, epocas, metricaEarly");
 
 $resultadosParaPlanilha = [];
 
@@ -33,8 +35,8 @@ foreach ($resultados as $key => $value) {
 	    $res["recallBaselineEnriquecimento"] = $value["recall"] - $comparacao["recall"];
 	}
 
-	debug($res);
-	// fputcsv($fp, $res, ";");
+	// debug($res);
+	fputcsv($fp, $res, ";");
     // $resultadosParaPlanilha[] = $res;
 }
 
@@ -42,7 +44,5 @@ foreach ($resultados as $key => $value) {
 // var_dump($resultadosParaPlanilha);
 // echo "</pre>";
 
-// fclose($fp);
-
-
+fclose($fp);
 ?>
