@@ -2,22 +2,40 @@
 
 require_once("../config.php");
 
-// $fp = fopen('/var/www/html/marcos/EnrichmentSemantic/ds3/comparativo.csv', 'w') or die("Unable to open file!");
-$fp = fopen(realpath('.') . '\parte2.csv', 'w') or die("Unable to open file!");
+$filePath = realpath('.') . '\parte3.csv';
+$fp = fopen($filePath, 'w') or die("Unable to open file!");
 
-$f1Baseline = 82.85397;
-$precisionBaseline = 75.154139;
-$recallBaseline = 92.349;
-
-// $resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 AND redeId = 'FlattenGloVe' ORDER BY redeId, epocas, metricaEarly");
-$resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 AND redeId IN ('FlattenBoW', 'FlattenGloVe') ORDER BY redeId, epocas, metricaEarly");
+$resultados = query("SELECT * FROM resultado WHERE enriquecimento = 1 ORDER BY redeId, epocas, metricaEarly, dataset");
 
 $resultadosParaPlanilha = [];
 
 foreach ($resultados as $key => $value) {
-	debug($value);
+	if ($value["dataset"] == "DS3") {
+		$f1Baseline = 82.85397;
+		$precisionBaseline = 75.154139;
+		$recallBaseline = 92.349;
+	} else if ($value["dataset"] == "DS1-Q1") {
+		$f1Baseline = 89.834;
+		$precisionBaseline = 92.151;
+		$recallBaseline = 87.517;
+	} else if ($value["dataset"] == "DS1-Q2") {
+		$f1Baseline = 89.057;
+		$precisionBaseline = 81.398;
+		$recallBaseline = 96.715;
+	} else if ($value["dataset"] == "DS1-Q3") {
+		$f1Baseline = 88.037;
+		$precisionBaseline = 80.892;
+		$recallBaseline = 95.182;
+	}
+
     $res = [];
     $res["redeId"] = $value["redeId"];
+    $pieces = explode("-DS1", $res["redeId"]);
+
+    if ($pieces !== false) {
+    	$res["redeId"] = $pieces[0];
+    }
+    $res["dataset"] = $value["dataset"];
     $res["algoritmo"] = $value["tipoRede"];
     $res["embedding"] = $value["embedding"];
     $res["epocas"] = $value["epocas"];
@@ -26,23 +44,20 @@ foreach ($resultados as $key => $value) {
     $res["precisionBaseline"] = $value["precision"] - $precisionBaseline;
     $res["recallBaseline"] = $value["recall"] - $recallBaseline;
 
-	$resultadao = query("SELECT * FROM resultado WHERE enriquecimento = 0 AND redeId = '" . $value["redeId"] . "' AND metricaEarly = '" . $value["metricaEarly"] . "' AND epocas = '" . $value["epocas"] . "';");
+	$resultadao = query("SELECT * FROM resultado WHERE enriquecimento = 0 AND redeId = '" . $value["redeId"] . "' AND metricaEarly = '" . $value["metricaEarly"] . "' AND epocas = '" . $value["epocas"] . "' AND dataset = '" . $value["dataset"] . "';");
+
+
+	if (getNumRows($resultadao) == 0) {
+		debug($value);
+		continue;
+	}
 	foreach ($resultadao as $comparacao) {
-		debug($value["recall"]);
-		debug($comparacao["recall"]);
 		$res["f1BaselineEnriquecimento"] = $value["f1"] - $comparacao["f1"];
 	    $res["precisionBaselineEnriquecimento"] = $value["precision"] - $comparacao["precision"];
 	    $res["recallBaselineEnriquecimento"] = $value["recall"] - $comparacao["recall"];
 	}
-
-	// debug($res);
 	fputcsv($fp, $res, ";");
-    // $resultadosParaPlanilha[] = $res;
 }
-
-// echo "<pre>";
-// var_dump($resultadosParaPlanilha);
-// echo "</pre>";
 
 fclose($fp);
 ?>
