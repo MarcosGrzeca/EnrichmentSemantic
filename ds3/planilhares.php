@@ -45,11 +45,8 @@ foreach ($resultados as $key => $value) {
     $res["recallBaseline"] = $value["recall"] - $recallBaseline;
 
 	$resultadao = query("SELECT * FROM resultado WHERE enriquecimento = 0 AND redeId = '" . $value["redeId"] . "' AND metricaEarly = '" . $value["metricaEarly"] . "' AND epocas = '" . $value["epocas"] . "' AND dataset = '" . $value["dataset"] . "';");
-
-
 	if (getNumRows($resultadao) == 0) {
 		debug($value);
-		continue;
 	}
 	foreach ($resultadao as $comparacao) {
 		$res["f1BaselineEnriquecimento"] = $value["f1"] - $comparacao["f1"];
