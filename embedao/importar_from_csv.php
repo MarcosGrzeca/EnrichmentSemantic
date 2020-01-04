@@ -26,9 +26,6 @@ foreach ($files as $key => $value) {
                 }
             }
             $cont++;
-            if ($cont > 25) {
-                break;
-            }
         }
     }
 }

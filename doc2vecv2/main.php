@@ -14,6 +14,9 @@ $sql = "SELECT textOriginal as texto
 		SELECT textoOriginal as texto
 		FROM chat_tweets t
 		UNION ALL
+		SELECT texto as texto
+		FROM embeddao t
+		UNION ALL
 		SELECT textEmbedding as texto
 		FROM tweets t
 		WHERE textparser <> ''
@@ -27,6 +30,7 @@ $tweets = query($sql);
 
 function clear($texto) {
 	$string = trim(preg_replace('/\s+/', ' ', $texto));
+	$string = preg_replace("#[[:punct:]]#", "", $string);
 	return mb_strtolower($string, 'UTF-8');
 }
 
@@ -34,6 +38,8 @@ foreach (getRows($tweets) as $tweet) {
 	fwrite($myfile, clear($tweet["texto"]) . "\n");
 }
 fclose($myfile);
+
+die("FIM");
 
 $trainPos = [];
 $trainNeg = [];

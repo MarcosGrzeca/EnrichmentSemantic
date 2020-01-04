@@ -1,0 +1,1654 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"va",
+				"value"
+			],
+			[
+				"is_n",
+				"is_null"
+			],
+			[
+				"clas",
+				"classificacaoFinal"
+			],
+			[
+				"key",
+				"keyAvaliacao"
+			],
+			[
+				"a",
+				"avaliacoes"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"has",
+				"hashTags"
+			],
+			[
+				"hash",
+				"hashtags"
+			],
+			[
+				"te",
+				"Text"
+			],
+			[
+				"pala",
+				"palavraErro"
+			],
+			[
+				"sql",
+				"sqlIni"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"dru",
+				"drunkTwo"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			],
+			[
+				"html",
+				"htmlspecialchars"
+			],
+			[
+				"co",
+				"count"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"per",
+				"percentualQ1"
+			],
+			[
+				"var_",
+				"var_dump"
+			],
+			[
+				"c",
+				"count"
+			],
+			[
+				"ar",
+				"arv"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"fo",
+				"foreach\tforeach …"
+			],
+			[
+				"getPatternsC",
+				"getPatternsComI"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"palav",
+				"palavraComErro"
+			],
+			[
+				"margi",
+				"Mardigras"
+			],
+			[
+				"tex",
+				"textOriginal"
+			],
+			[
+				"total",
+				"totalNegativo"
+			],
+			[
+				"toal",
+				"totalPositivo"
+			],
+			[
+				"val",
+				"valores"
+			],
+			[
+				"text",
+				"textoParser"
+			],
+			[
+				"tr",
+				"tree"
+			],
+			[
+				"categoria",
+				"categoriaFilho"
+			],
+			[
+				"categ",
+				"categoria"
+			],
+			[
+				"res",
+				"resource"
+			],
+			[
+				"cat",
+				"categorias"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"vale",
+				"valueConceito"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"subj",
+				"subjectsLocais"
+			],
+			[
+				"wo",
+				"wordErro"
+			],
+			[
+				"valu",
+				"valueCorrecao"
+			],
+			[
+				"ty",
+				"typesLocais"
+			],
+			[
+				"quar",
+				"quartil3Grafo"
+			],
+			[
+				"ca",
+				"catch"
+			],
+			[
+				"reso",
+				"resourceCompleto"
+			],
+			[
+				"json_",
+				"json_encode"
+			],
+			[
+				"get",
+				"getCountSC"
+			],
+			[
+				"ht",
+				"httpcode"
+			],
+			[
+				"id",
+				"idTweetInterno"
+			],
+			[
+				"str",
+				"street"
+			],
+			[
+				"hea",
+				"headers"
+			],
+			[
+				"arr",
+				"arrayTmp"
+			],
+			[
+				"array_m",
+				"array_merge"
+			],
+			[
+				"word",
+				"wordsDocs"
+			],
+			[
+				"wor",
+				"wordsDocs"
+			],
+			[
+				"words",
+				"wordsDocs"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"strt",
+				"strtolower"
+			],
+			[
+				"tra",
+				"training"
+			],
+			[
+				"dataFrame",
+				"dataFrameHashTag"
+			],
+			[
+				"dtm",
+				"dtm_train_hash_tags"
+			],
+			[
+				"NULL",
+				"null"
+			],
+			[
+				"to",
+				"totalNegativo"
+			],
+			[
+				"emo",
+				"emoticonPos"
+			],
+			[
+				"pos",
+				"possuiEmoticon"
+			],
+			[
+				"emot",
+				"emoticons"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"chec",
+				"checkEmoji"
+			],
+			[
+				"hashta",
+				"hashtags"
+			],
+			[
+				"Co",
+				"Connection"
+			],
+			[
+				"la",
+				"labels_train"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"side",
+				"ST: Function Description"
+			],
+			[
+				"mo",
+				"File: Move"
+			],
+			[
+				"sav",
+				"Project: Save As"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"mv",
+				"File: Move"
+			],
+			[
+				"d",
+				"File: Duplicate"
+			],
+			[
+				"du",
+				"File: Duplicate"
+			],
+			[
+				"de",
+				"File: Delete"
+			],
+			[
+				"m",
+				"File: Move"
+			],
+			[
+				"dele",
+				"File: Delete"
+			],
+			[
+				"ss php",
+				"Set Syntax: PHP"
+			],
+			[
+				"di",
+				"Set Syntax: Diff"
+			],
+			[
+				"del",
+				"File: Delete"
+			],
+			[
+				"ref",
+				"Project: Refresh Folders"
+			],
+			[
+				"refre",
+				"Project: Refresh Folders"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"dee",
+				"File: Delete"
+			],
+			[
+				"new ",
+				"File: New File Relative to Project Root"
+			],
+			[
+				"new fo",
+				"File: New File Relative to Current View"
+			],
+			[
+				"ss ph",
+				"Set Syntax: PHP"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"sql",
+				"ST: Format SQL"
+			],
+			[
+				"ss sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"ren",
+				"File: Rename"
+			],
+			[
+				"json ",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"js",
+				"Pretty JSON: Validate"
+			],
+			[
+				"json",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"new",
+				"Tasks: New document"
+			],
+			[
+				"text pas",
+				"Text Pastry: Command-Line"
+			],
+			[
+				"text pastr",
+				"Text Pastry: From 0 To X"
+			],
+			[
+				"text",
+				"Text Pastry: From 1 To X"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"incrme",
+				"Increment Selection"
+			],
+			[
+				"insc",
+				"Increment Selection"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ss p",
+				"Set Syntax: PHP"
+			],
+			[
+				"due",
+				"File: Duplicate"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"reid",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"File: Duplicate"
+			],
+			[
+				"join",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"bea",
+				"PHP CodeBeautifier"
+			],
+			[
+				"save",
+				"Project: Save As"
+			],
+			[
+				"close",
+				"Project: Close"
+			],
+			[
+				"uni",
+				"Permute Lines: Unique"
+			],
+			[
+				"beau",
+				"SQL Beautifier: Format Current SQL File"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"com",
+				"Toggle Block Comment"
+			],
+			[
+				"comment",
+				"Toggle Block Comment"
+			],
+			[
+				"si",
+				"View: Toggle Side Bar"
+			],
+			[
+				"prv ",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"ss ja",
+				"Set Syntax: Java"
+			],
+			[
+				"ss js",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss j",
+				"Set Syntax: Java"
+			],
+			[
+				"refr",
+				"Project: Refresh Folders"
+			],
+			[
+				"ss ",
+				"Set Syntax: JSON"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"ss sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"close ",
+				"Project: Close"
+			],
+			[
+				"project ",
+				"Project: Save As"
+			],
+			[
+				"dupl",
+				"File: Duplicate"
+			],
+			[
+				"st con",
+				"ST: Select Connection"
+			],
+			[
+				"st conn",
+				"ST: Setup Connections"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"st co",
+				"ST: Select Connection"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"REF",
+				"Project: Refresh Folders"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"clos",
+				"Project: Close"
+			],
+			[
+				"JSON",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"iden",
+				"JSON Reindent: reindent file or selection"
+			],
+			[
+				"prett",
+				"Preferences: Pretty JSON Settings - Default"
+			],
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ss json",
+				"Set Syntax: JSON"
+			],
+			[
+				"ss jo",
+				"Set Syntax: JSON"
+			],
+			[
+				"proj",
+				"Project: Save As"
+			],
+			[
+				"add",
+				"Project: Add Folder"
+			],
+			[
+				"ss jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"clo",
+				"Project: Close"
+			],
+			[
+				"pro",
+				"Project: Save As"
+			],
+			[
+				"painst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			]
+		],
+		"width": 524.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp64/www/EnrichmentSemantic/teste.html",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/processar_tweets_embedding.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/error_handling_embedding.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/semantic_enrichment.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/remover_regras_controle.php",
+		"/C/wamp64/www/EnrichmentSemantic/spelling_baseline.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/processar_tweets.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/index.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/types_extraction.php",
+		"/C/wamp64/www/EnrichmentSemantic/ds3/parte3.csv",
+		"/C/wamp64/www/EnrichmentSemantic/ds3/planilhares.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/remover_regras_controle_embedding.php",
+		"/C/wamp64/www/EnrichmentSemantic/ds3/parte2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/amazonq2.txt",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/error_handling.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/index.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/dbpedia_entities.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/dbpedia_entities.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/types_extraction.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/semantic_enrichment.php",
+		"/C/wamp64/www/EnrichmentSemantic/functions/functions.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon/processar_tweets.php",
+		"/C/wamp64/www/EnrichmentSemantic/analisar_concordancia.php",
+		"/C/wamp64/www/EnrichmentSemantic/gerar_kappa.php",
+		"/C/wamp64/www/EnrichmentSemantic/kappa_amazon.csv",
+		"/C/wamp64/www/EnrichmentSemantic/analisar_concordancia_amazonv2.php",
+		"/C/wamp64/www/EnrichmentSemantic/amazon_classificador_final.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/emailcriarconta.txt",
+		"/C/wamp64/www/EnrichmentSemantic/amazon_conta.txt",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input21.csv",
+		"/C/wamp64/www/EnrichmentSemantic/make_figure_verificar.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/resultados/f1279922.csv",
+		"/C/wamp64/www/EnrichmentSemantic/amazon.txt",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/tmpenvio20.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input20.csv",
+		"/C/wamp64/www/EnrichmentSemantic/possui_expressao_v2.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input19.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3536041_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/bkptmp.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/bkptmpv2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3535981_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/faltando2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/parte2/faltando2_parte2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/importar_tweets_api.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3534492_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/parte2/faltando1.csv",
+		"/C/wamp64/www/EnrichmentSemantic/geradorplanilhas/parte1.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/parte2/faltando2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3523119_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/functions/Connection.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3515675_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input18.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input17.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input15.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input16.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input13.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input14.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3527559_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3527093_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input11.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input12.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input9.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input10.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3526743_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/envio/input.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3526694_batch_results.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/resultcatar/result.txt",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/resultcatar/parte1.csv",
+		"/C/Users/Marcos/Downloads/Batch_3526694_batch_results (1).csv",
+		"/C/Users/Marcos/Downloads/input9.csv",
+		"/C/wamp64/www/testmysql.php",
+		"/C/Users/Marcos/Downloads/input8.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3524454_batch_results.csv",
+		"/C/Users/Marcos/Downloads/input7.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3523241_batch_results.csv",
+		"/C/Users/Marcos/Downloads/input5.csv",
+		"/C/Users/Marcos/Downloads/input6.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/Batch_3523119_batch_results_2.csv",
+		"/C/Users/Marcos/Downloads/input.csv",
+		"/C/Users/Marcos/Downloads/input3.csv",
+		"/C/Users/Marcos/Downloads/input4.csv",
+		"/C/wamp64/www/EnrichmentSemantic/kappa_q2.csv",
+		"/C/wamp64/www/EnrichmentSemantic/excluir_non_ingles.php",
+		"/C/wamp64/www/EnrichmentSemantic/possui_expressao_v3.php",
+		"/C/Users/Marcos/Downloads/sentiment_sample.csv",
+		"/C/wamp64/www/EnrichmentSemantic/kappa.csv",
+		"/C/wamp64/www/EnrichmentSemantic/possui_expressao.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/feature_selection/verificador_nlu.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/feature_selection/verificador.php",
+		"/C/wamp64/www/EnrichmentSemantic/dbpedia_entities.php",
+		"/C/wamp64/www/EnrichmentSemantic/types_extraction.php",
+		"/C/wamp64/www/EnrichmentSemantic/feature_selection_review/verificacao.php",
+		"/C/wamp64/www/EnrichmentSemantic/extrair_user.php",
+		"/C/wamp64/www/EnrichmentSemantic/semantic_enrichment.php",
+		"/C/wamp64/www/EnrichmentSemantic/remover_regras_controle.php",
+		"/C/wamp64/www/EnrichmentSemantic/verificarExistenciaExpressaoRegular.php",
+		"/C/wamp64/www/EnrichmentSemantic/pre_processar_only_text_parser.php",
+		"/C/wamp64/www/EnrichmentSemantic/pre_processar.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/possui_termos.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/error_handling.php",
+		"/C/wamp64/www/EnrichmentSemantic/spelling.php",
+		"/C/wamp64/www/EnrichmentSemantic/index.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/excluir_tweets_mais.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/excluir_possui_url.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/coletar_sober_tweets.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/extrair_user_id.php",
+		"/C/wamp64/www/EnrichmentSemantic/spikes/user_timeline.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/coletar_drunk_tweets.php",
+		"/C/wamp64/www/EnrichmentSemantic/spikes/user_idd.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/importar_from_artigo.php",
+		"/C/wamp64/www/EnrichmentSemantic/pre_validacao_q2.php",
+		"/C/wamp64/www/EnrichmentSemantic/chat/planilhas/alc5000.csv",
+		"/C/wamp64/www/EnrichmentSemantic/chat",
+		"/C/wamp64/www/EnrichmentSemantic/patricsday_import.php",
+		"/C/wamp64/www/EnrichmentSemantic/pre_selecionar/verificar.php",
+		"/C/wamp64/www/EnrichmentSemantic/config.php",
+		"/C/wamp64/www/EnrichmentSemantic/semantic_enrichment_test.php",
+		"/C/wamp64/www/EnrichmentSemantic/verificar_url.php",
+		"/C/wamp64/www/EnrichmentSemantic/twitter-api-php/vendor/phpspec/prophecy/src/Prophecy/Exception/Exception.php",
+		"/C/wamp64/www/EnrichmentSemantic/importar_from_csv.php",
+		"/C/wamp64/www/EnrichmentSemantic/todo.todo",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/alcolicevents/parte38.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/alcolicevents/parte39.csv",
+		"/C/wamp64/www/EnrichmentSemantic/analisarcategorias.php",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/alcolicevents/parte1.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/nao_classificados_filtro.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/tmp.csv",
+		"/C/wamp64/www/EnrichmentSemantic/planilhas/nao_classificados_filtro_v2.csv"
+	],
+	"find":
+	{
+		"height": 41.0
+	},
+	"find_in_files":
+	{
+		"height": 122.0,
+		"where_history":
+		[
+			"*.php",
+			"",
+			"*.php",
+			"*.csv",
+			"*.php, *.csv",
+			"*.php",
+			"*.R",
+			"*.php",
+			"*.php, -*/twitter-api-php/*",
+			"*.php, -/twitter-api-php/*",
+			"*.php, ~/twitter-api-php/*",
+			"*.php",
+			"*.csv",
+			"*.php,*.csv",
+			"*.php",
+			"*",
+			"*.",
+			"*.php",
+			"*",
+			"*.",
+			"*.php",
+			"*.csv",
+			"*.php",
+			"*.txt",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sexo",
+			"gender",
+			"facepl",
+			"textEmbedding",
+			"textSemPalavrasControle",
+			"chat_tweets_nlp",
+			"1.",
+			"0.",
+			"textEmbedding",
+			"query($update);",
+			"ehErro(",
+			"textEmbedding",
+			"numeroErros",
+			"textSemPalavrasControle",
+			".",
+			", ",
+			".",
+			", ",
+			",",
+			".",
+			", ",
+			".",
+			", ",
+			".",
+			", ",
+			".",
+			", ",
+			".",
+			";",
+			".",
+			";",
+			",",
+			"Baseline",
+			",",
+			"DS3",
+			".",
+			";",
+			"query(",
+			"epocas",
+			"redeId",
+			".",
+			";",
+			"textoOriginal",
+			".",
+			" ",
+			"[9] ",
+			"> resultados",
+			"\", \"/\\b",
+			"$originalText",
+			"textParser",
+			"Thursday: dinner at wee nam kee chix rice novena, desserts at tcc",
+			"textParser",
+			"gain",
+			"INfo",
+			"50",
+			"chat",
+			"chat_tweets",
+			"chat_tweets_conceito",
+			"chat_tweets",
+			"newtable",
+			"oldtable",
+			"chat_tweets",
+			"chat",
+			"chat_tweets",
+			"textSemPalavrasControle",
+			"textoOriginal",
+			"chat_tweets",
+			" FEITO",
+			"kappa",
+			"kappa_amazon.csv",
+			"kappa/kappa_amazon.csv",
+			"classificacaoFinal",
+			"getN",
+			"f1279922.csv",
+			"indicativoDrunk",
+			"Batch_3536041_batch_results.csv",
+			"tweets_completo",
+			"489167918287298562",
+			"0",
+			"$linha[2]",
+			"faltando1.csv",
+			"500044159567544320",
+			"493375968074285056",
+			"1021693488830840832",
+			"fput",
+			"489167918287298562",
+			"Batch_3523119_batch_results.csv",
+			"975300446456709120",
+			"https://twitter.com/chris_shoejunky/status/8307713366",
+			"\"planilhas/",
+			"0",
+			"973437650202963968",
+			"974042074025689088",
+			"https://twitter.com/NuBodhi/status/973880740294381568",
+			"https://twitter.com/wanderlust_hims/status/973752589488541696",
+			"https://twitter.com/NancySantaClara/status/973614060792147968",
+			"https://twitter.com/hannah24dillman/status/1020325737901854720",
+			"https://twitter.com/SJ_Resister/status/973555617754427392",
+			"https://twitter.com/OephiliaFace/status/1020287829161758720",
+			"https://twitter.com/CumWithMe1369/status/973437650202963968",
+			"https://twitter.com/SafaMarwa85/status/1020202461070385152",
+			"https://twitter.com/toddjohnston1/status/973414447250362368",
+			"945776345333854208",
+			"971800086417170432",
+			"971837764160315392",
+			"971851549621346304",
+			"0",
+			"for",
+			"\t  ",
+			" 3IH9TRB0FDC2FP6W0V8BY5CU7OL1ID\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/K4YC3E/status/9866423590132...\t  s\n \t  3INZSNUD8233WJT5CUMTMEE0DV19DS\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/FRHYSB/status/9885802230285...\t  y\n \t  3INZSNUD8233WJT5CUMTMEE0DV19DS\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/FRHYSB/status/9885802230285...\t  n\n \t  3INZSNUD8233WJT5CUMTMEE0DV19DS\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/FRHYSB/status/9885802230285...\t  n\n \t  3IVEC1GSLRCYA0Q2IDTBA6RUK3A1JP\t  A2S96ZZ70YFPSK\t  100% (2/2)\n  https://twitter.com/StuckInABocks/status/986840...\t  y\n \t  3IVEC1GSLRCYA0Q2IDTBA6RUK3A1JP\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/StuckInABocks/status/986840...\t  y\n \t  3IVEC1GSLRCYA0Q2IDTBA6RUK3A1JP\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/StuckInABocks/status/986840...\t  y\n \t  3JTPR5MTZUPS92X31LVZEB4OB8FK5P\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/DeardebG/status/98927999586...\t  n\n \t  3JTPR5MTZUPS92X31LVZEB4OB8FK5P\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/DeardebG/status/98927999586...\t  y\n \t  3JTPR5MTZUPS92X31LVZEB4OB8FK5P\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/DeardebG/status/98927999586...\t  y\n \t  3KQC8JMJGE5YTX9RHH49MMQC5VKH3S\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ChunkyHilda/status/98757694...\t  y\n \t  3KQC8JMJGE5YTX9RHH49MMQC5VKH3S\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/ChunkyHilda/status/98757694...\t  n\n \t  3KQC8JMJGE5YTX9RHH49MMQC5VKH3S\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ChunkyHilda/status/98757694...\t  y\n \t  3KTCJ4SCVIEOB8WNLA63QYJBOX51MT\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/u_boot/status/9872656334223...\t  s\n \t  3KTCJ4SCVIEOB8WNLA63QYJBOX51MT\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/u_boot/status/9872656334223...\t  y\n \t  3KTCJ4SCVIEOB8WNLA63QYJBOX51MT\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/u_boot/status/9872656334223...\t  n\n \t  3L1EFR8WWVI0U37130HJAEHLP8H9F3\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/bananabrainss/status/988986...\t  y\n \t  3L1EFR8WWVI0U37130HJAEHLP8H9F3\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/bananabrainss/status/988986...\t  n\n \t  3L1EFR8WWVI0U37130HJAEHLP8H9F3\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/bananabrainss/status/988986...\t  n\n \t  3LAZVA75NK4J0WZVHULUNLILB3YO2C\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/Queerlove212/status/9899541...\t  n\n \t  3LAZVA75NK4J0WZVHULUNLILB3YO2C\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Queerlove212/status/9899541...\t  n\n \t  3LAZVA75NK4J0WZVHULUNLILB3YO2C\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/Queerlove212/status/9899541...\t  y\n \t  3M67TQBQQJ15YCQTSKVRWD6USS49AQ\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/goofyduckling37/status/9879...\t  y\n \t  3M67TQBQQJ15YCQTSKVRWD6USS49AQ\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/goofyduckling37/status/9879...\t  y\n \t  3M67TQBQQJ15YCQTSKVRWD6USS49AQ\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/goofyduckling37/status/9879...\t  n\n \t  3M7OI89LV01698LTERO6IY5G2UHC6K\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/boobious76/status/989763413...\t  y\n \t  3M7OI89LV01698LTERO6IY5G2UHC6K\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/boobious76/status/989763413...\t  y\n \t  3M7OI89LV01698LTERO6IY5G2UHC6K\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/boobious76/status/989763413...\t  y\n \t  3M93N4X8HM0Y4KPWVW8V67E3A3NJSR\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/aquariusluv17/status/987163...\t  n\n \t  3M93N4X8HM0Y4KPWVW8V67E3A3NJSR\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/aquariusluv17/status/987163...\t  y\n \t  3M93N4X8HM0Y4KPWVW8V67E3A3NJSR\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/aquariusluv17/status/987163...\t  y\n \t  3MDWE879UJFAHMVLYYVNROQ0AAP9BL\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Seizure_kun/status/98802635...\t  y\n \t  3MDWE879UJFAHMVLYYVNROQ0AAP9BL\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Seizure_kun/status/98802635...\t  n\n \t  3MDWE879UJFAHMVLYYVNROQ0AAP9BL\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/Seizure_kun/status/98802635...\t  n\n \t  3NQUW096N8LMUVHXPBKH5RM5M439L8\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/timspace09/status/989876660...\t  y\n \t  3NQUW096N8LMUVHXPBKH5RM5M439L8\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/timspace09/status/989876660...\t  n\n \t  3NQUW096N8LMUVHXPBKH5RM5M439L8\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/timspace09/status/989876660...\t  n\n \t  3NQUW096N8LMUVHXPBKH5RM5M43L9K\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/B_MBBFP/status/989498732965...\t  y\n \t  3NQUW096N8LMUVHXPBKH5RM5M43L9K\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/B_MBBFP/status/989498732965...\t  n\n \t  3NQUW096N8LMUVHXPBKH5RM5M43L9K\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/B_MBBFP/status/989498732965...\t  y\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I849A\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/cole_hazeltine/status/98700...\t  s\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I849A\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/cole_hazeltine/status/98700...\t  s\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I849A\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/cole_hazeltine/status/98700...\t  n\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I894F\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/HananPruitt/status/98712300...\t  n\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I894F\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/HananPruitt/status/98712300...\t  n\n \t  3O0M2G5VC8FQWNACJJL0JAKU0I894F\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/HananPruitt/status/98712300...\t  y\n \t  3OCZWXS7ZQK3T8FLML70TBH308KL5T\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/MistressOlive96/status/9875...\t  y\n \t  3OCZWXS7ZQK3T8FLML70TBH308KL5T\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/MistressOlive96/status/9875...\t  y\n \t  3OCZWXS7ZQK3T8FLML70TBH308KL5T\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/MistressOlive96/status/9875...\t  n\n \t  3OND0WXMHYS13VPO61L55DU9WKAEHG\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/funkyj/status/9878723747280...\t  y\n \t  3OND0WXMHYS13VPO61L55DU9WKAEHG\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/funkyj/status/9878723747280...\t  n\n \t  3OND0WXMHYS13VPO61L55DU9WKAEHG\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/funkyj/status/9878723747280...\t  y\n \t  3OZ4VAIBEZSEWC60PRD0HUYA97HJVW\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/CraigIawton/status/98748532...\t  y\n \t  3OZ4VAIBEZSEWC60PRD0HUYA97HJVW\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/CraigIawton/status/98748532...\t  y\n \t  3OZ4VAIBEZSEWC60PRD0HUYA97HJVW\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/CraigIawton/status/98748532...\t  n\n \t  3QGHA0EA0LDLTI8TR95F58YB8BABWD\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/KnickCarraway/status/986763...\t  n\n \t  3QGHA0EA0LDLTI8TR95F58YB8BABWD\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/KnickCarraway/status/986763...\t  n\n \t  3QGHA0EA0LDLTI8TR95F58YB8BABWD\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/KnickCarraway/status/986763...\t  n\n \t  3QQUBC64ZGR2JR2G446AYMCCY2UNX7\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/julianna12369/status/987862...\t  n\n \t  3QQUBC64ZGR2JR2G446AYMCCY2UNX7\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/julianna12369/status/987862...\t  n\n \t  3QQUBC64ZGR2JR2G446AYMCCY2UNX7\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/julianna12369/status/987862...\t  s\n \t  3QTFNPMJC8VROM2V5MUVV7SN62SNZ4\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/The_Ausmerican/status/98912...\t  y\n \t  3QTFNPMJC8VROM2V5MUVV7SN62SNZ4\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/The_Ausmerican/status/98912...\t  y\n \t  3QTFNPMJC8VROM2V5MUVV7SN62SNZ4\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/The_Ausmerican/status/98912...\t  y\n \t  3R4QIDVOJRPPJLYMG0DZKAXW44IEE0\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/tretreez/status/98753101223...\t  n\n \t  3R4QIDVOJRPPJLYMG0DZKAXW44IEE0\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/tretreez/status/98753101223...\t  y\n \t  3R4QIDVOJRPPJLYMG0DZKAXW44IEE0\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/tretreez/status/98753101223...\t  n\n \t  3R868ACW4UPLEUL9IIH05NJQ5Q6GZP\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Aamazon1/status/98651075290...\t  s\n \t  3R868ACW4UPLEUL9IIH05NJQ5Q6GZP\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Aamazon1/status/98651075290...\t  s\n \t  3R868ACW4UPLEUL9IIH05NJQ5Q6GZP\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Aamazon1/status/98651075290...\t  n\n \t  3RDTX9JRT0ENFASVLHJ7MM44RKY97Z\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ChoicesMatter_/status/98774...\t  n\n \t  3RDTX9JRT0ENFASVLHJ7MM44RKY97Z\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ChoicesMatter_/status/98774...\t  n\n \t  3RDTX9JRT0ENFASVLHJ7MM44RKY97Z\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ChoicesMatter_/status/98774...\t  n\n \t  3RHLQY6EDVH2ZDNTVZQ2563KR3N4DR\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/gribble006/status/989180149...\t  y\n \t  3RHLQY6EDVH2ZDNTVZQ2563KR3N4DR\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/gribble006/status/989180149...\t  y\n \t  3RHLQY6EDVH2ZDNTVZQ2563KR3N4DR\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/gribble006/status/989180149...\t  n\n \t  3S1WOPCJFI6XU1KEU1OQHQAO9CEEJL\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/andrewmcn11/status/98818402...\t  n\n \t  3S1WOPCJFI6XU1KEU1OQHQAO9CEEJL\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/andrewmcn11/status/98818402...\t  y\n \t  3S1WOPCJFI6XU1KEU1OQHQAO9CEEJL\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/andrewmcn11/status/98818402...\t  y\n \t  3SNR5F7R9461ZQ08CJ3Q5PVOWXPEI9\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Heeather12/status/987907016...\t  y\n \t  3SNR5F7R9461ZQ08CJ3Q5PVOWXPEI9\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Heeather12/status/987907016...\t  y\n \t  3SNR5F7R9461ZQ08CJ3Q5PVOWXPEI9\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/Heeather12/status/987907016...\t  y\n \t  3SR6AEG6W76Z906F62XZCGMPEWEYHE\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/StevieFortune/status/987316...\t  y\n \t  3SR6AEG6W76Z906F62XZCGMPEWEYHE\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/StevieFortune/status/987316...\t  n\n \t  3SR6AEG6W76Z906F62XZCGMPEWEYHE\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/StevieFortune/status/987316...\t  n\n \t  3T2HW4QDUXKTRRNRCYRI28WISVP9CS\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ChaseBarger/status/98826396...\t  n\n \t  3T2HW4QDUXKTRRNRCYRI28WISVP9CS\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ChaseBarger/status/98826396...\t  n\n \t  3T2HW4QDUXKTRRNRCYRI28WISVP9CS\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ChaseBarger/status/98826396...\t  y\n \t  3TFJJUELSJ2IR72SRPC3SLO4MPFC23\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/LolaG_/status/9882806706307...\t  y\n \t  3TFJJUELSJ2IR72SRPC3SLO4MPFC23\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/LolaG_/status/9882806706307...\t  n\n \t  3TFJJUELSJ2IR72SRPC3SLO4MPFC23\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/LolaG_/status/9882806706307...\t  y\n \t  3TTPFEFXCVXXQGW90J27TP2WFMMH6Y\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/thesuperjaps/status/9877558...\t  y\n \t  3TTPFEFXCVXXQGW90J27TP2WFMMH6Y\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/thesuperjaps/status/9877558...\t  n\n \t  3TTPFEFXCVXXQGW90J27TP2WFMMH6Y\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/thesuperjaps/status/9877558...\t  n\n \t  3TZ0XG8CBWXRFOXEVMBD0M0Z24498M\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/shannineayisha/status/98781...\t  y\n \t  3TZ0XG8CBWXRFOXEVMBD0M0Z24498M\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/shannineayisha/status/98781...\t  y\n \t  3TZ0XG8CBWXRFOXEVMBD0M0Z24498M\t  A10LQ8RUWDUI5U\t  100% (1/1)\n  https://twitter.com/shannineayisha/status/98781...\t  y\n \t  3TZDZ3Y0JUJ94ODTW12YLCDROYY912\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Jasmin_Belle/status/9864557...\t  y\n \t  3TZDZ3Y0JUJ94ODTW12YLCDROYY912\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/Jasmin_Belle/status/9864557...\t  n\n \t  3TZDZ3Y0JUJ94ODTW12YLCDROYY912\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Jasmin_Belle/status/9864557...\t  n",
+			" 389A2A304QVBVXZEC28P9XVPPRVC0J\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/shrutha28/status/9878430403...\t  n\n \t  389A2A304QVBVXZEC28P9XVPPRVC0J\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/shrutha28/status/9878430403...\t  y\n \t  38B7Q9C28II4BAEQ27EFG848W9E960\t  A2S96ZZ70YFPSK\t  100% (2/2)\n  https://twitter.com/Squirtz_Loads/status/987627...\t  y\n \t  38B7Q9C28II4BAEQ27EFG848W9E960\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Squirtz_Loads/status/987627...\t  n\n \t  38B7Q9C28II4BAEQ27EFG848W9E960\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Squirtz_Loads/status/987627...\t  y\n \t  38DCH97KHJFMR4AJ3SJQB7Z2SF2JQ2\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/MarinaMilton/status/9868247...\t  n\n \t  38DCH97KHJFMR4AJ3SJQB7Z2SF2JQ2\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/MarinaMilton/status/9868247...\t  y\n \t  38DCH97KHJFMR4AJ3SJQB7Z2SF2JQ2\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/MarinaMilton/status/9868247...\t  y\n \t  3909MD9T21UHPZYIBBX52SIWG5XEFI\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/eddieonballoons/status/9876...\t  y\n \t  3909MD9T21UHPZYIBBX52SIWG5XEFI\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/eddieonballoons/status/9876...\t  y\n \t  3909MD9T21UHPZYIBBX52SIWG5XEFI\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/eddieonballoons/status/9876...\t  n\n \t  39I4RL8QGLUJBTSVHV9SWRIIJVGH4D\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/AllofCaitlin/status/9876354...\t  y\n \t  39I4RL8QGLUJBTSVHV9SWRIIJVGH4D\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/AllofCaitlin/status/9876354...\t  y\n \t  39I4RL8QGLUJBTSVHV9SWRIIJVGH4D\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/AllofCaitlin/status/9876354...\t  n\n \t  39N6W9XWRF0L94B4MWFHRGAOZW1YGF\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/DetroitInsight/status/98680...\t  y\n \t  39N6W9XWRF0L94B4MWFHRGAOZW1YGF\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/DetroitInsight/status/98680...\t  y\n \t  39N6W9XWRF0L94B4MWFHRGAOZW1YGF\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/DetroitInsight/status/98680...\t  y\n \t  39N6W9XWRF0L94B4MWFHRGAOZW2GYY\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Tomjme912/status/9864005643...\t  y\n \t  39N6W9XWRF0L94B4MWFHRGAOZW2GYY\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Tomjme912/status/9864005643...\t  n\n \t  39N6W9XWRF0L94B4MWFHRGAOZW2GYY\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Tomjme912/status/9864005643...\t  n\n \t  3A520CCNWPDMT8HA0VBDOR75JPKEA5\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/TheDaleJT/status/9870001968...\t  n\n \t  3A520CCNWPDMT8HA0VBDOR75JPKEA5\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/TheDaleJT/status/9870001968...\t  y\n \t  3A520CCNWPDMT8HA0VBDOR75JPKEA5\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/TheDaleJT/status/9870001968...\t  y\n \t  3AA88CN98RGQBQ7NCN0WP82H6DIYKI\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/xparisxgirlx/status/9878890...\t  y\n \t  3AA88CN98RGQBQ7NCN0WP82H6DIYKI\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/xparisxgirlx/status/9878890...\t  y\n \t  3AA88CN98RGQBQ7NCN0WP82H6DIYKI\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/xparisxgirlx/status/9878890...\t  n\n \t  3ACRLU860PRRCIM269B9J2RB175EB0\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Thewastedirish/status/98706...\t  y\n \t  3ACRLU860PRRCIM269B9J2RB175EB0\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Thewastedirish/status/98706...\t  y\n \t  3ACRLU860PRRCIM269B9J2RB175EB0\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Thewastedirish/status/98706...\t  n\n \t  3ATYLI1PRVFJ6SX3OFRMM242DEKJOU\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/colby_beck10/status/9865888...\t  y\n \t  3ATYLI1PRVFJ6SX3OFRMM242DEKJOU\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/colby_beck10/status/9865888...\t  y\n \t  3ATYLI1PRVFJ6SX3OFRMM242DEKJOU\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/colby_beck10/status/9865888...\t  n\n \t  3BPP3MA3TEX3PR8EXM03X5NGD1JELN\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/sarahh19291/status/98860023...\t  n\n \t  3BPP3MA3TEX3PR8EXM03X5NGD1JELN\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/sarahh19291/status/98860023...\t  y\n \t  3BPP3MA3TEX3PR8EXM03X5NGD1JELN\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/sarahh19291/status/98860023...\t  y\n \t  3CVBMEMMXDTGUGAEJT7ZZ32SAX6H7X\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Paws675/status/987855082774...\t  n\n \t  3CVBMEMMXDTGUGAEJT7ZZ32SAX6H7X\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Paws675/status/987855082774...\t  y\n \t  3CVBMEMMXDTGUGAEJT7ZZ32SAX6H7X\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/Paws675/status/987855082774...\t  y\n \t  3CZH926SIER7RJ1TRU1MBOL5RFO4EK\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/KitEnCaboodle/status/989245...\t  n\n \t  3CZH926SIER7RJ1TRU1MBOL5RFO4EK\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/KitEnCaboodle/status/989245...\t  y\n \t  3CZH926SIER7RJ1TRU1MBOL5RFO4EK\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/KitEnCaboodle/status/989245...\t  s\n \t  3D0LPO3EADC91HS2AFSPWPJQQISYO2\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/colledge/status/98814211492...\t  y\n \t  3D0LPO3EADC91HS2AFSPWPJQQISYO2\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/colledge/status/98814211492...\t  y\n \t  3D0LPO3EADC91HS2AFSPWPJQQISYO2\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/colledge/status/98814211492...\t  y\n \t  3D42WVSDHA8FV4F9BC9Z9VACYH1YFG\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/FitHendy21/status/986674326...\t  n\n \t  3D42WVSDHA8FV4F9BC9Z9VACYH1YFG\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/FitHendy21/status/986674326...\t  y\n \t  3D42WVSDHA8FV4F9BC9Z9VACYH1YFG\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/FitHendy21/status/986674326...\t  n\n \t  3D4BBDG7ZJ97CPYBVPQ8BVTWS3FC3E\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/golfermasters/status/988879...\t  n\n \t  3D4BBDG7ZJ97CPYBVPQ8BVTWS3FC3E\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/golfermasters/status/988879...\t  s\n \t  3D4BBDG7ZJ97CPYBVPQ8BVTWS3FC3E\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/golfermasters/status/988879...\t  y\n \t  3DFYDSXB2YDEJXH0K13VL8WRV08JU7\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/ChoicesMatter_/status/98737...\t  n\n \t  3DFYDSXB2YDEJXH0K13VL8WRV08JU7\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ChoicesMatter_/status/98737...\t  n\n \t  3DFYDSXB2YDEJXH0K13VL8WRV08JU7\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ChoicesMatter_/status/98737...\t  n\n \t  3EGKVCRQFY5PIN3T6AN3Q5JRJJABYC\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/RoyichiiMagtaos/status/9872...\t  n\n \t  3EGKVCRQFY5PIN3T6AN3Q5JRJJABYC\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/RoyichiiMagtaos/status/9872...\t  n\n \t  3EGKVCRQFY5PIN3T6AN3Q5JRJJABYC\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/RoyichiiMagtaos/status/9872...\t  n\n \t  3EHIMLB7F9CKUUFXTYZ5D3YNLHCH8K\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3EHIMLB7F9CKUUFXTYZ5D3YNLHCH8K\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3EHIMLB7F9CKUUFXTYZ5D3YNLHCH8K\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3EHVO81VN7Y2JUVCUDQQYTBF7B6H10\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/CamiLesbian_57/status/98708...\t  n\n \t  3EHVO81VN7Y2JUVCUDQQYTBF7B6H10\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/CamiLesbian_57/status/98708...\t  y\n \t  3EHVO81VN7Y2JUVCUDQQYTBF7B6H10\t  A3O1I9MATO3ZZN\t  100% (3/3)\n  https://twitter.com/CamiLesbian_57/status/98708...\t  y\n \t  3EKZL9T8YAZM6X5AAAFAFPU6B8XHCQ\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/laclochesonne/status/989978...\t  y\n \t  3EKZL9T8YAZM6X5AAAFAFPU6B8XHCQ\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/laclochesonne/status/989978...\t  n\n \t  3EKZL9T8YAZM6X5AAAFAFPU6B8XHCQ\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/laclochesonne/status/989978...\t  y\n \t  3EQPA8A3769V5WBAQO2320B6XINJZW\t  A3O1I9MATO3ZZN\t  100% (3/3)\n  https://twitter.com/TommyJones69/status/9886786...\t  y\n \t  3EQPA8A3769V5WBAQO2320B6XINJZW\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/TommyJones69/status/9886786...\t  y\n \t  3EQPA8A3769V5WBAQO2320B6XINJZW\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/TommyJones69/status/9886786...\t  n\n \t  3F6045TU7F1RTTGO0EHR0IVAMAM99B\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/carrie98765/status/98786338...\t  y\n \t  3F6045TU7F1RTTGO0EHR0IVAMAM99B\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/carrie98765/status/98786338...\t  n\n \t  3F6045TU7F1RTTGO0EHR0IVAMAM99B\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/carrie98765/status/98786338...\t  y\n \t  3FJ2RVH251JGT9VPF52CQVNWG4C92J\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/NotAPrecourt/status/9870283...\t  y\n \t  3FJ2RVH251JGT9VPF52CQVNWG4C92J\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/NotAPrecourt/status/9870283...\t  y\n \t  3FJ2RVH251JGT9VPF52CQVNWG4C92J\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/NotAPrecourt/status/9870283...\t  n\n \t  3FTID4TN8NB1VWP5XNCX48FWVDNYLL\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/travie_quinn/status/9879347...\t  n\n \t  3FTID4TN8NB1VWP5XNCX48FWVDNYLL\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/travie_quinn/status/9879347...\t  y\n \t  3FTID4TN8NB1VWP5XNCX48FWVDNYLL\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/travie_quinn/status/9879347...\t  n\n \t  3FVBZG9CLLR2C5AUYUMQKOS52J0H0X\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/shivgraham/status/987070637...\t  s\n \t  3FVBZG9CLLR2C5AUYUMQKOS52J0H0X\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/shivgraham/status/987070637...\t  n\n \t  3FVBZG9CLLR2C5AUYUMQKOS52J0H0X\t  A2OXE5D9A7KSGW\t  100% (1/1)\n  https://twitter.com/shivgraham/status/987070637...\t  s\n \t  3GS542CVJX08S6ECXO4AO2Q80E395K\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/punkdrunkfuck/status/987521...\t  y\n \t  3GS542CVJX08S6ECXO4AO2Q80E395K\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/punkdrunkfuck/status/987521...\t  y\n \t  3GS542CVJX08S6ECXO4AO2Q80E395K\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/punkdrunkfuck/status/987521...\t  y\n \t  3GV1I4SEOB2ZCCFZR4H5LHV3W3VL69\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3GV1I4SEOB2ZCCFZR4H5LHV3W3VL69\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3GV1I4SEOB2ZCCFZR4H5LHV3W3VL69\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/claire_quitter/status/98789...\t  y\n \t  3H1C3QRA03WAMNE8K974UMXTJS5EC7\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/_triple_ob/status/987193103...\t  y\n \t  3H1C3QRA03WAMNE8K974UMXTJS5EC7\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/_triple_ob/status/987193103...\t  y\n \t  3H1C3QRA03WAMNE8K974UMXTJS5EC7\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/_triple_ob/status/987193103...\t  y\n \t  3HKIF5DF60A6833WEKN1SZHXQNH9G2\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ilivetowrite16/status/98919...\t  y\n \t  3HKIF5DF60A6833WEKN1SZHXQNH9G2\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ilivetowrite16/status/98919...\t  y\n \t  3HKIF5DF60A6833WEKN1SZHXQNH9G2\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ilivetowrite16/status/98919...\t  y\n \t  3I4E7AFQ2MCZJK2BKWDLGCAPCM1JTG\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/DreGmoney/status/9872066554...\t  s\n \t  3I4E7AFQ2MCZJK2BKWDLGCAPCM1JTG\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/DreGmoney/status/9872066554...\t  s\n \t  3I4E7AFQ2MCZJK2BKWDLGCAPCM1JTG\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/DreGmoney/status/9872066554...\t  n\n \t  3I7KR83SNCQBAPZF4B8GQR9QX4Y9K5\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Stuey_85/status/99000162733...\t  y\n \t  3I7KR83SNCQBAPZF4B8GQR9QX4Y9K5\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Stuey_85/status/99000162733...\t  n\n \t  3I7KR83SNCQBAPZF4B8GQR9QX4Y9K5\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Stuey_85/status/99000162733...\t  y\n \t  3IH9TRB0FDC2FP6W0V8BY5CU7OL1ID\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/K4YC3E/status/9866423590132...\t  n\n \t  3IH9TRB0FDC2FP6W0V8BY5CU7OL1ID\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/K4YC3E/status/9866423590132...\t  s",
+			" 301KG0KX9EY98FD8DHQ43CLKZHKH2H\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ckreality13/status/98738060...\t  y\n \t  301KG0KX9EY98FD8DHQ43CLKZHKH2H\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ckreality13/status/98738060...\t  y\n \t  301KG0KX9EY98FD8DHQ43CLKZHKH2H\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ckreality13/status/98738060...\t  y\n \t  304QEQWKZRXC4MWH27HG4XP6E5EO0S\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/FredGrayson/status/98931927...\t  n\n \t  304QEQWKZRXC4MWH27HG4XP6E5EO0S\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/FredGrayson/status/98931927...\t  n\n \t  304QEQWKZRXC4MWH27HG4XP6E5EO0S\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/FredGrayson/status/98931927...\t  y\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NU9H1\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/boilakwatsero21/status/9892...\t  y\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NU9H1\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/boilakwatsero21/status/9892...\t  s\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NU9H1\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/boilakwatsero21/status/9892...\t  n\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NUH99\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/fabiancalinyc/status/988026...\t  n\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NUH99\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/fabiancalinyc/status/988026...\t  y\n \t  30OITAWPBSGK8ZY7YQ5JDZTY5NUH99\t  A1LZWU72K42V92\t  100% (10/10)\n  https://twitter.com/fabiancalinyc/status/988026...\t  y\n \t  3126F2F5FAGTGCNCPETAEMW0IBKEPL\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/callme_jc/status/9900064455...\t  y\n \t  3126F2F5FAGTGCNCPETAEMW0IBKEPL\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/callme_jc/status/9900064455...\t  y\n \t  3126F2F5FAGTGCNCPETAEMW0IBKEPL\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/callme_jc/status/9900064455...\t  y\n \t  31ANT7FQNAF17CWVV0S21JOWJRBH5I\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ZaynMyZunshine/status/98771...\t  y\n \t  31ANT7FQNAF17CWVV0S21JOWJRBH5I\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ZaynMyZunshine/status/98771...\t  y\n \t  31ANT7FQNAF17CWVV0S21JOWJRBH5I\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ZaynMyZunshine/status/98771...\t  n\n \t  31J7RYECZN345QE2LY5OQL4MOSF1LR\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/HaydenJames277/status/98716...\t  n\n \t  31J7RYECZN345QE2LY5OQL4MOSF1LR\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/HaydenJames277/status/98716...\t  y\n \t  31J7RYECZN345QE2LY5OQL4MOSF1LR\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/HaydenJames277/status/98716...\t  y\n \t  31JUPBOORPHMGQYNKJE35VRU2YLL8V\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/JimmySextonLLM/status/98897...\t  n\n \t  31JUPBOORPHMGQYNKJE35VRU2YLL8V\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/JimmySextonLLM/status/98897...\t  n\n \t  31JUPBOORPHMGQYNKJE35VRU2YLL8V\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/JimmySextonLLM/status/98897...\t  s\n \t  329E6HTMSYFPVNAZN276ZE64XCOK3Z\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/hookorslicegolf/status/9898...\t  y\n \t  329E6HTMSYFPVNAZN276ZE64XCOK3Z\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/hookorslicegolf/status/9898...\t  y\n \t  329E6HTMSYFPVNAZN276ZE64XCOK3Z\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/hookorslicegolf/status/9898...\t  y\n \t  32W3UF2EZQYSULHFV3VRL0L263B4CR\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/RedWhiteAndBuzz/status/9881...\t  y\n \t  32W3UF2EZQYSULHFV3VRL0L263B4CR\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/RedWhiteAndBuzz/status/9881...\t  y\n \t  32W3UF2EZQYSULHFV3VRL0L263B4CR\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/RedWhiteAndBuzz/status/9881...\t  y\n \t  32W3UF2EZQYSULHFV3VRL0L263BC4Z\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/mattlingerfelt/status/98895...\t  y\n \t  32W3UF2EZQYSULHFV3VRL0L263BC4Z\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/mattlingerfelt/status/98895...\t  n\n \t  32W3UF2EZQYSULHFV3VRL0L263BC4Z\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/mattlingerfelt/status/98895...\t  y\n \t  32ZCLEW0B1X1RS943F41B29SNJGJPB\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ZaineFrame/status/986738425...\t  n\n \t  32ZCLEW0B1X1RS943F41B29SNJGJPB\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ZaineFrame/status/986738425...\t  n\n \t  32ZCLEW0B1X1RS943F41B29SNJGJPB\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ZaineFrame/status/986738425...\t  y\n \t  335VBRURDLD8OP758PXDSWWLD729EL\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/readernoir/status/988919346...\t  n\n \t  335VBRURDLD8OP758PXDSWWLD729EL\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/readernoir/status/988919346...\t  n\n \t  335VBRURDLD8OP758PXDSWWLD729EL\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/readernoir/status/988919346...\t  y\n \t  33KMQD9OFLRJ1R426KLN8QDYWUA77L\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/MBomya/status/9871246778721...\t  y\n \t  33KMQD9OFLRJ1R426KLN8QDYWUA77L\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/MBomya/status/9871246778721...\t  n\n \t  33KMQD9OFLRJ1R426KLN8QDYWUA77L\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/MBomya/status/9871246778721...\t  n\n \t  3421H3BM9CUGZ5TXMQ84PC9DIFY9J6\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/CraicTowns/status/989950749...\t  y\n \t  3421H3BM9CUGZ5TXMQ84PC9DIFY9J6\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/CraicTowns/status/989950749...\t  y\n \t  3421H3BM9CUGZ5TXMQ84PC9DIFY9J6\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/CraicTowns/status/989950749...\t  y\n \t  344M16OZKKSTDRBZ9ZGIAXR5IWJENP\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/dailyoneliner1/status/98932...\t  n\n \t  344M16OZKKSTDRBZ9ZGIAXR5IWJENP\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/dailyoneliner1/status/98932...\t  y\n \t  344M16OZKKSTDRBZ9ZGIAXR5IWJENP\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/dailyoneliner1/status/98932...\t  n\n \t  34OWYT6U3YUK4U9R48N4DBUD5099IU\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/MissAndret/status/989539264...\t  n\n \t  34OWYT6U3YUK4U9R48N4DBUD5099IU\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/MissAndret/status/989539264...\t  y\n \t  351S7I5UGB91O7XRN0R97D4XN4FJNF\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/OS_Rixen/status/98653486118...\t  y\n \t  351S7I5UGB91O7XRN0R97D4XN4FJNF\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/OS_Rixen/status/98653486118...\t  y\n \t  351S7I5UGB91O7XRN0R97D4XN4FJNF\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/OS_Rixen/status/98653486118...\t  y\n \t  356TQKY9XHAN159LGPDTMQ9T7EG788\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/BeerBellyThug/status/987420...\t  y\n \t  356TQKY9XHAN159LGPDTMQ9T7EG788\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/BeerBellyThug/status/987420...\t  y\n \t  356TQKY9XHAN159LGPDTMQ9T7EG788\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/BeerBellyThug/status/987420...\t  y\n \t  356ZPKYPUJURMH43PF54LPOG0NOYPJ\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ChoicesMatter_/status/98883...\t  n\n \t  356ZPKYPUJURMH43PF54LPOG0NOYPJ\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/ChoicesMatter_/status/98883...\t  n\n \t  356ZPKYPUJURMH43PF54LPOG0NOYPJ\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ChoicesMatter_/status/98883...\t  n\n \t  359AP8GAGIXPD8ZYX1TYOC5CX51C7J\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Amandainthstars/status/9899...\t  y\n \t  359AP8GAGIXPD8ZYX1TYOC5CX51C7J\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/Amandainthstars/status/9899...\t  n\n \t  359AP8GAGIXPD8ZYX1TYOC5CX51C7J\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Amandainthstars/status/9899...\t  y\n \t  35JDMRECC6MN3ZUDMV3NKDI8HKXEGH\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/sarabowden33/status/9877093...\t  s\n \t  35JDMRECC6MN3ZUDMV3NKDI8HKXEGH\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/sarabowden33/status/9877093...\t  y\n \t  35JDMRECC6MN3ZUDMV3NKDI8HKXEGH\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/sarabowden33/status/9877093...\t  y\n \t  35ZRNT9RUKB8LEVELUZZ6VNDHHYO3N\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/callme_jc/status/9900055217...\t  n\n \t  35ZRNT9RUKB8LEVELUZZ6VNDHHYO3N\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/callme_jc/status/9900055217...\t  n\n \t  35ZRNT9RUKB8LEVELUZZ6VNDHHYO3N\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/callme_jc/status/9900055217...\t  y\n \t  360ZO6N6J3W60DZIPNLW541UM9T9MA\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/callme_jc/status/9900060648...\t  y\n \t  360ZO6N6J3W60DZIPNLW541UM9T9MA\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/callme_jc/status/9900060648...\t  y\n \t  360ZO6N6J3W60DZIPNLW541UM9T9MA\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/callme_jc/status/9900060648...\t  y\n \t  366FYU4PTI2S5LQWCMO2I5A1O1EEKK\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/live7love2laugh/status/9885...\t  y\n \t  366FYU4PTI2S5LQWCMO2I5A1O1EEKK\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/live7love2laugh/status/9885...\t  y\n \t  366FYU4PTI2S5LQWCMO2I5A1O1EEKK\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/live7love2laugh/status/9885...\t  y\n \t  36AZSFEYZ6D8ET8O1Z0JJ6FX128BV3\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Originalkidski/status/98667...\t  s\n \t  36AZSFEYZ6D8ET8O1Z0JJ6FX128BV3\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/Originalkidski/status/98667...\t  n\n \t  36AZSFEYZ6D8ET8O1Z0JJ6FX128BV3\t  A2C0QNEIOSKAV5\t  100% (7/7)\n  https://twitter.com/Originalkidski/status/98667...\t  s\n \t  36MUZ9VAE8FKRFKMK52FESFB4SHED7\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/confesshuns/status/98727540...\t  y\n \t  36MUZ9VAE8FKRFKMK52FESFB4SHED7\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/confesshuns/status/98727540...\t  n\n \t  37OPIVELUWGYDI8CQWJJ9U4IB5CHAO\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/NegiCakes/status/9886464268...\t  y\n \t  37OPIVELUWGYDI8CQWJJ9U4IB5CHAO\t  A252Z0ZJ7PF59Q\t  100% (23/23)\n  https://twitter.com/NegiCakes/status/9886464268...\t  s\n \t  37OPIVELUWGYDI8CQWJJ9U4IB5CHAO\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/NegiCakes/status/9886464268...\t  n\n \t  37VE3DA4YWU3WSD4WAJF45OOTNXHBJ\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/kcdahippie/status/988656207...\t  y\n \t  37VE3DA4YWU3WSD4WAJF45OOTNXHBJ\t  A362CV8OOYJA6W\t  100% (85/85)\n  https://twitter.com/kcdahippie/status/988656207...\t  y\n \t  37VE3DA4YWU3WSD4WAJF45OOTNXHBJ\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/kcdahippie/status/988656207...\t  y\n \t  37VHPF5VYEGTDM4H76L42C178P7C86\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/callme_jc/status/9900056146...\t  y\n \t  37VHPF5VYEGTDM4H76L42C178P7C86\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/callme_jc/status/9900056146...\t  y\n \t  37VUR2VJ6C2B2MKW8LCPN2EZUJ1C1M\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/ElNeatoBandito/status/98793...\t  n\n \t  37VUR2VJ6C2B2MKW8LCPN2EZUJ1C1M\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/ElNeatoBandito/status/98793...\t  y\n \t  37VUR2VJ6C2B2MKW8LCPN2EZUJ1C1M\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/ElNeatoBandito/status/98793...\t  y\n \t  385MDVINFESRB165F1IW3WHOGGJJW6\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/seth_bauerle/status/9878622...\t  s\n \t  385MDVINFESRB165F1IW3WHOGGJJW6\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/seth_bauerle/status/9878622...\t  s\n \t  385MDVINFESRB165F1IW3WHOGGJJW6\t  A3BBDCU69807T2\t  100% (8/8)\n  https://twitter.com/seth_bauerle/status/9878622...\t  n\n \t  388FBO7JZT6RJWSQ90SCH0JL08NYNN\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/Emciingoho/status/988415942...\t  n\n \t  388FBO7JZT6RJWSQ90SCH0JL08NYNN\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/Emciingoho/status/988415942...\t  y\n \t  388FBO7JZT6RJWSQ90SCH0JL08NYNN\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/Emciingoho/status/988415942...\t  s\n \t  388FBO7JZT6RJWSQ90SCH0JL08ONYD\t  A1Y3PSVSU557SW\t  100% (14/14)\n  https://twitter.com/jacobmendoza_/status/987924...\t  n\n \t  388FBO7JZT6RJWSQ90SCH0JL08ONYD\t  A7204W9E8IR1R\t  100% (119/119)\n  https://twitter.com/jacobmendoza_/status/987924...\t  s\n \t  388FBO7JZT6RJWSQ90SCH0JL08ONYD\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/jacobmendoza_/status/987924...\t  s\n \t  389A2A304QVBVXZEC28P9XVPPRVC0J\t  A109CH3492UU42\t  100% (83/83)\n  https://twitter.com/shrutha28/status/9878430403...\t  n",
+			"986461332684918784",
+			"989763413457842176",
+			"990005521737543680",
+			"https://twitter.com/RatTomato/status/978148618237632512",
+			"Batch_3521895_batch_results.csv",
+			"classificado",
+			"1,1",
+			"update(",
+			"influence",
+			"under the influence",
+			"1,1",
+			"fgetcsv",
+			"url",
+			"indicativoDrunk",
+			".",
+			" "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"https://twitter.com/mattman1624/status/975262119292645377"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 48.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 253.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Java/JavaC.sublime-build",
+	"project": "teste.html",
+	"replace":
+	{
+		"height": 54.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"a",
+				"amazonq2.txt"
+			],
+			[
+				"dbpedia_entities.php",
+				"chat\\dbpedia_entities.php"
+			],
+			[
+				"semantic_enrichment.php",
+				"chat\\semantic_enrichment.php"
+			],
+			[
+				"types_extraction.php",
+				"amazon\\types_extraction.php"
+			],
+			[
+				"error_handling.php",
+				"amazon\\error_handling.php"
+			],
+			[
+				"processar_tweets.php",
+				"amazon\\processar_tweets.php"
+			],
+			[
+				"kappa_amazon.csv",
+				"kappa_amazon.csv"
+			],
+			[
+				"em",
+				"planilhas\\emailcriarconta.txt"
+			],
+			[
+				"amazno",
+				"amazonq2.txt"
+			],
+			[
+				"email",
+				"planilhas\\emailcriarconta.txt"
+			],
+			[
+				"amazo",
+				"amazon_conta.txt"
+			],
+			[
+				"input21",
+				"planilhas\\envio\\input21.csv"
+			],
+			[
+				"amazon",
+				"amazonq2.txt"
+			],
+			[
+				"planilhasf1279922.csv",
+				"planilhas\\resultados\\f1279922.csv"
+			],
+			[
+				"amaozn",
+				"amazon.txt"
+			],
+			[
+				"emai",
+				"planilhas\\emailcriarconta.txt"
+			],
+			[
+				"amazonv2",
+				"analisar_concordancia_amazonv2.php"
+			],
+			[
+				"input19",
+				"planilhas\\envio\\input19.csv"
+			],
+			[
+				"planilhasBatch_3536041_batch_results.csv",
+				"planilhas\\Batch_3536041_batch_results.csv"
+			],
+			[
+				"importar_tweets_api.php",
+				"importar_tweets_api.php"
+			],
+			[
+				"planilhas/Batch_3535981_batch_results.csv",
+				"planilhas\\Batch_3535981_batch_results.csv"
+			],
+			[
+				"faltando1.csv",
+				"planilhas\\envio\\parte2\\faltando1.csv"
+			],
+			[
+				"faltando2.csv",
+				"planilhas\\envio\\parte2\\faltando2.csv"
+			],
+			[
+				"connec",
+				"functions\\Connection.php"
+			],
+			[
+				"planilhas/Batch_3534492_batch_results.csv",
+				"planilhas\\Batch_3534492_batch_results.csv"
+			],
+			[
+				"input18",
+				"planilhas\\envio\\input18.csv"
+			],
+			[
+				"Batch_3534492_batch_results.csv",
+				"planilhas\\Batch_3534492_batch_results.csv"
+			],
+			[
+				"v2",
+				"analisar_concordancia_amazonv2.php"
+			],
+			[
+				"input",
+				"planilhas\\envio\\input15.csv"
+			],
+			[
+				"Batch_3527559_batch_results.csv",
+				"planilhas\\Batch_3527559_batch_results.csv"
+			],
+			[
+				"input10",
+				"planilhas\\envio\\input10.csv"
+			],
+			[
+				"input9",
+				"planilhas\\envio\\input9.csv"
+			],
+			[
+				"amzonv2",
+				"analisar_concordancia_amazonv2.php"
+			],
+			[
+				"planilhas/Batch_3526694_batch_results.csv",
+				"planilhas\\Batch_3526694_batch_results.csv"
+			],
+			[
+				"v2.php",
+				"analisar_concordancia_amazonv2.php"
+			],
+			[
+				"Batch_3526694_batch_results.csv",
+				"planilhas\\Batch_3526694_batch_results.csv"
+			],
+			[
+				"amaz",
+				"amazonq2.txt"
+			],
+			[
+				"ama",
+				"amazon.txt"
+			],
+			[
+				"planilhas/Batch_3523241_batch_results.csv",
+				"planilhas\\Batch_3523241_batch_results.csv"
+			],
+			[
+				"kappa",
+				"kappa_q2.csv"
+			],
+			[
+				"ka",
+				"kappa.csv"
+			],
+			[
+				"kappa.csv",
+				"kappa.csv"
+			],
+			[
+				"possui",
+				"possui_expressao_v3.php"
+			],
+			[
+				"seman",
+				"semantic_enrichment.php"
+			],
+			[
+				"semanti",
+				"semantic_enrichment.php"
+			],
+			[
+				"remover_regras_controle.php",
+				"chat\\remover_regras_controle.php"
+			],
+			[
+				"chat/ind",
+				"chat\\index.php"
+			],
+			[
+				"chat/in",
+				"chat\\index.php"
+			],
+			[
+				"index",
+				"index.php"
+			],
+			[
+				"coletar_sober_tweets.php",
+				"chat\\coletar_sober_tweets.php"
+			],
+			[
+				"s",
+				"spelling.php"
+			],
+			[
+				"spelling",
+				"spelling.php"
+			],
+			[
+				"dbpe",
+				"dbpedia_entities.php"
+			],
+			[
+				"functions/Connection.php",
+				"functions\\Connection.php"
+			],
+			[
+				"conf",
+				"config.php"
+			],
+			[
+				"user_tim",
+				"spikes\\user_timeline.php"
+			],
+			[
+				"pre_",
+				"pre_processar.php"
+			],
+			[
+				"conne",
+				"functions\\Connection.php"
+			],
+			[
+				"non",
+				"excluir_non_ingles.php"
+			],
+			[
+				"pre",
+				"pre_processar.php"
+			],
+			[
+				"impo",
+				"importar_from_csv.php"
+			],
+			[
+				"tod",
+				"todo.todo"
+			],
+			[
+				"impor",
+				"importar_from_csv.php"
+			],
+			[
+				"im",
+				"importar_from_csv.php"
+			],
+			[
+				"planilhas/alcolicevents/parte39.csv",
+				"planilhas\\alcolicevents\\parte39.csv"
+			],
+			[
+				"planilhas/alcolicevents/parte38.csv",
+				"planilhas\\alcolicevents\\parte38.csv"
+			],
+			[
+				"importar",
+				"importar_tweets_api.php"
+			],
+			[
+				"parte",
+				"planilhas\\alcolicevents\\parte1.csv"
+			],
+			[
+				"nao_classificados_filtro_v2.csv",
+				"planilhas\\nao_classificados_filtro_v2.csv"
+			],
+			[
+				"filtrar",
+				"filtrar.php"
+			],
+			[
+				"pred_union_v3.csv",
+				"planilhas\\pred_union_v3.csv"
+			],
+			[
+				"fitl",
+				"filtrar.php"
+			],
+			[
+				"planilhas/amazonpartecompleto2_filtrado.csv",
+				"planilhas\\amazonpartecompleto2_filtrado.csv"
+			],
+			[
+				"analisar_concordancia.php",
+				"analisar_concordancia.php"
+			],
+			[
+				"conn",
+				"functions\\Connection.php"
+			],
+			[
+				"sp",
+				"spelling.php"
+			],
+			[
+				"spe",
+				"spelling.php"
+			],
+			[
+				"impot",
+				"importar_tweets_api.php"
+			],
+			[
+				"Connection.php",
+				"functions\\Connection.php"
+			],
+			[
+				"confi",
+				"config.php"
+			],
+			[
+				"am",
+				"amazon.txt"
+			],
+			[
+				"tests.js",
+				"categoriaview\\libs\\tests\\tests.js"
+			],
+			[
+				"config.php",
+				"config.php"
+			],
+			[
+				"mportar_from_csv.php",
+				"importar_from_csv.php"
+			],
+			[
+				"con",
+				"config.php"
+			],
+			[
+				"user",
+				"extrair_user.php"
+			],
+			[
+				"semant",
+				"semantic_enrichment.php"
+			],
+			[
+				"funct",
+				"functions\\functions.php"
+			],
+			[
+				"csv",
+				"csv.php"
+			],
+			[
+				"csv.",
+				"csv.php"
+			],
+			[
+				"risa",
+				"risada.php"
+			],
+			[
+				"risada",
+				"risada.php"
+			],
+			[
+				"calais",
+				"calais.php"
+			],
+			[
+				"emoti",
+				"sentimento_emoticon.php"
+			],
+			[
+				"alche",
+				"alchemy_entities.php"
+			],
+			[
+				"alc",
+				"alchemy.php"
+			],
+			[
+				"wiki-pl",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				"wiki-p",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				"wiki-",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				".sql",
+				"sqls\\types.sql"
+			],
+			[
+				"ty",
+				"sqls\\types.sql"
+			],
+			[
+				"ex",
+				"ex_sparql.txt"
+			],
+			[
+				"cate",
+				"enriquecimento_categoria.php"
+			],
+			[
+				"enriquecimento_categoria_mini.php",
+				"enriquecimento_categoria_mini.php"
+			],
+			[
+				"enriquecimento_categoria.php",
+				"enriquecimento_categoria.php"
+			],
+			[
+				"wikipedia_ca",
+				"wikipedia\\wikipedia_category.php"
+			],
+			[
+				"wikipedia",
+				"wikipedia\\wikipedia_category.php"
+			],
+			[
+				"alemao.php",
+				"alemao\\alemao.php"
+			],
+			[
+				"wikiped",
+				"wikipedia\\wikipedia_category.php"
+			],
+			[
+				"dbped",
+				"dbpedia_gram.php"
+			],
+			[
+				"blockspring.php",
+				"wikipedia\\blockspring.php"
+			],
+			[
+				"enrique",
+				"dbpedia\\enriquecimento_subject.php"
+			],
+			[
+				"enri",
+				"enriquecimento_categoria.php"
+			],
+			[
+				"wiki-plain",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				".giti",
+				".gitignore"
+			],
+			[
+				"plain",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				"enriqiec",
+				"dbpedia\\enriquecimento_subject.php"
+			],
+			[
+				"wiki",
+				"wikipedia\\wikipedia_api.txt"
+			],
+			[
+				".",
+				".gitignore"
+			],
+			[
+				"wi",
+				"wikipedia_api.txt"
+			],
+			[
+				"pla",
+				"pagerank-master\\examples\\wiki-plain.php"
+			],
+			[
+				"wiki_p",
+				"wikipedia_api.txt"
+			],
+			[
+				"wikip",
+				"wikipedia_api.txt"
+			],
+			[
+				"enriquecimento",
+				"dbpedia\\enriquecimento_simone.php"
+			],
+			[
+				"enqie",
+				"database\\tabelas\\enriquecimento.sql"
+			],
+			[
+				"enr",
+				"dbpedia\\enriquecimento_subject.php"
+			],
+			[
+				"connect",
+				"functions\\Connection.php"
+			],
+			[
+				"enriquecimento_s",
+				"dbpedia\\enriquecimento_simone.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\wamp64\\www\\sublime-projects\\enrichment.sublime-project"
+			],
+			[
+				"ic",
+				"C:\\wamp64\\www\\sublime-projects\\icwsm.sublime-project"
+			],
+			[
+				"icw",
+				"C:\\wamp64\\www\\sublime-projects\\icwsm.sublime-project"
+			],
+			[
+				"si",
+				"C:\\wamp64\\www\\sublime-projects\\icwsm.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 81.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 325.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
